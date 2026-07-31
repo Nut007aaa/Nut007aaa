@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 400" width="1000" height="400">
+  <defs>
+    <linearGradient id="box-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#0F172A" stop-opacity="0.8" />
+    </linearGradient>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600&amp;family=Inter:wght@400;500&amp;display=swap');
+      .arch-title { font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 16px; fill: #F8FAFC; }
+      .arch-desc { font-family: 'Inter', sans-serif; font-weight: 400; font-size: 12px; fill: #94A3B8; }
+      .line { stroke: #38BDF8; stroke-width: 2; stroke-dasharray: 4; animation: dash 20s linear infinite; }
+      @keyframes dash { to { stroke-dashoffset: -1000; } }
+    </style>
+  </defs>
+  
+  <rect width="100%" height="100%" fill="#050816" rx="20"/>
+  
+  <!-- Lines connecting boxes -->
+  <path d="M 200 200 L 350 120" class="line" fill="none" />
+  <path d="M 200 200 L 350 280" class="line" fill="none" />
+  <path d="M 550 120 L 700 200" class="line" fill="none" />
+  <path d="M 550 280 L 700 200" class="line" fill="none" />
+  
+  <!-- Client Box -->
+  <g transform="translate(50, 150)">
+    <rect width="150" height="100" rx="12" fill="url(#box-grad)" stroke="#38BDF8" stroke-width="1.5"/>
+    <text x="75" y="45" text-anchor="middle" class="arch-title">Client</text>
+    <text x="75" y="70" text-anchor="middle" class="arch-desc">Next.js / React</text>
+  </g>
+  
+  <!-- API Gateway Box -->
+  <g transform="translate(350, 70)">
+    <rect width="200" height="100" rx="12" fill="url(#box-grad)" stroke="#8B5CF6" stroke-width="1.5"/>
+    <text x="100" y="45" text-anchor="middle" class="arch-title">API Gateway</text>
+    <text x="100" y="70" text-anchor="middle" class="arch-desc">GraphQL / REST</text>
+  </g>
+
+  <!-- ML Box -->
+  <g transform="translate(350, 230)">
+    <rect width="200" height="100" rx="12" fill="url(#box-grad)" stroke="#EC4899" stroke-width="1.5"/>
+    <text x="100" y="45" text-anchor="middle" class="arch-title">AI Engine</text>
+    <text x="100" y="70" text-anchor="middle" class="arch-desc">PyTorch / TensorFlow</text>
+  </g>
+
+  <!-- Database Box -->
+  <g transform="translate(700, 150)">
+    <rect width="150" height="100" rx="12" fill="url(#box-grad)" stroke="#10B981" stroke-width="1.5"/>
+    <text x="75" y="45" text-anchor="middle" class="arch-title">Data Layer</text>
+    <text x="75" y="70" text-anchor="middle" class="arch-desc">PostgreSQL / Redis</text>
+  </g>
+</svg>

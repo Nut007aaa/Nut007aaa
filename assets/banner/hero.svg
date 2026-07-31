@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="1200" height="400">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050816" />
+      <stop offset="100%" stop-color="#0B1120" />
+    </linearGradient>
+
+    <!-- Accent Gradients -->
+    <linearGradient id="accent-blue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#8B5CF6" stop-opacity="0.2" />
+    </linearGradient>
+    <linearGradient id="accent-purple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#22D3EE" stop-opacity="0.1" />
+    </linearGradient>
+
+    <!-- Glass Effect Filter -->
+    <filter id="glass" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="24" result="blur" />
+      <feColorMatrix type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="glow" />
+      <feBlend in="SourceGraphic" in2="glow" mode="overlay" />
+    </filter>
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;900&amp;display=swap');
+      .title {
+        font-family: 'Inter', sans-serif;
+        font-weight: 900;
+        font-size: 72px;
+        fill: #F8FAFC;
+        letter-spacing: -2px;
+      }
+      .subtitle {
+        font-family: 'Inter', sans-serif;
+        font-weight: 400;
+        font-size: 24px;
+        fill: #94A3B8;
+        letter-spacing: 1px;
+      }
+      .badge-text {
+        font-family: 'Inter', sans-serif;
+        font-weight: 600;
+        font-size: 14px;
+        fill: #38BDF8;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+      }
+      .orb {
+        animation: float 10s ease-in-out infinite;
+      }
+      .orb2 {
+        animation: float2 14s ease-in-out infinite;
+      }
+      @keyframes float {
+        0%, 100% { transform: translate(0, 0) scale(1); }
+        50% { transform: translate(30px, -40px) scale(1.1); }
+      }
+      @keyframes float2 {
+        0%, 100% { transform: translate(0, 0) scale(1); }
+        50% { transform: translate(-40px, 30px) scale(0.9); }
+      }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="url(#bg-gradient)" />
+
+  <!-- Animated Orbs / 3D Glow -->
+  <circle cx="200" cy="100" r="150" fill="url(#accent-blue)" filter="url(#glass)" class="orb" />
+  <circle cx="1000" cy="300" r="200" fill="url(#accent-purple)" filter="url(#glass)" class="orb2" />
+  
+  <!-- Subtle Grid Pattern -->
+  <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#FFFFFF" stroke-opacity="0.03" stroke-width="1"/>
+  </pattern>
+  <rect width="100%" height="100%" fill="url(#grid)" />
+
+  <!-- Badge -->
+  <rect x="100" y="80" width="220" height="32" rx="16" fill="#1E293B" fill-opacity="0.5" stroke="#38BDF8" stroke-opacity="0.3" stroke-width="1" />
+  <text x="120" y="101" class="badge-text">◆ Senior Staff Engineer</text>
+
+  <!-- Main Text -->
+  <text x="100" y="190" class="title">Engineering</text>
+  <text x="100" y="270" class="title">The <tspan fill="#38BDF8">Impossible</tspan>.</text>
+  
+  <!-- Subtitle -->
+  <text x="100" y="330" class="subtitle">AI &amp; Distributed Systems • Product Design • Open Source</text>
+  
+  <!-- Abstract Geometry for 3D Feel -->
+  <g transform="translate(850, 150) rotate(15)">
+    <rect x="0" y="0" width="180" height="180" rx="40" fill="url(#accent-blue)" opacity="0.1" stroke="#38BDF8" stroke-width="2" stroke-opacity="0.5"/>
+    <rect x="20" y="20" width="180" height="180" rx="40" fill="url(#accent-purple)" opacity="0.1" stroke="#8B5CF6" stroke-width="2" stroke-opacity="0.5"/>
+  </g>
+</svg>
