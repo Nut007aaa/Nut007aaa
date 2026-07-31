@@ -27,8 +27,8 @@
 
 <div align="center">
   <a href="https://yourportfolio.com" target="_blank"><img src="https://img.shields.io/badge/Portfolio-050816?style=for-the-badge&logo=vercel&logoColor=white&borderColor=38BDF8" alt="Portfolio" /></a>
-  <a href="https://linkedin.com/in/username" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-050816?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
-  <a href="https://twitter.com/username" target="_blank"><img src="https://img.shields.io/badge/Twitter-050816?style=for-the-badge&logo=x&logoColor=white" alt="Twitter" /></a>
+  <a href="https://linkedin.com/in/Nut007aaa" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-050816?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
+  <a href="https://twitter.com/Nut007aaa" target="_blank"><img src="https://img.shields.io/badge/Twitter-050816?style=for-the-badge&logo=x&logoColor=white" alt="Twitter" /></a>
   <a href="mailto:contact@domain.com" target="_blank"><img src="https://img.shields.io/badge/Email-050816?style=for-the-badge&logo=minutemailer&logoColor=white" alt="Email" /></a>
   <a href="resume.pdf" target="_blank"><img src="https://img.shields.io/badge/Resume-050816?style=for-the-badge&logo=googledocs&logoColor=white" alt="Resume" /></a>
 </div>
@@ -104,13 +104,13 @@ My portfolio includes projects ranging from autonomous AI agents to complex cons
 <tr>
 
 <td align="center" width="50%">
-  <a href="https://github.com/username/ai-health">
+  <a href="https://github.com/Nut007aaa/ai-health">
     <img src="assets/projects/ai-health.svg" alt="AI Health Doctor Assistant" width="100%" />
   </a>
 </td>
 
 <td align="center" width="50%">
-  <a href="https://github.com/username/ai-matrimony">
+  <a href="https://github.com/Nut007aaa/ai-matrimony">
     <img src="assets/projects/ai-matrimony.svg" alt="AI Matrimony Platform" width="100%" />
   </a>
 </td>
@@ -118,13 +118,13 @@ My portfolio includes projects ranging from autonomous AI agents to complex cons
 <tr>
 
 <td align="center" width="50%">
-  <a href="https://github.com/username/portfolio">
+  <a href="https://github.com/Nut007aaa/portfolio">
     <img src="assets/projects/portfolio.svg" alt="Animated Portfolio" width="100%" />
   </a>
 </td>
 
 <td align="center" width="50%">
-  <a href="https://github.com/username/rizzglam">
+  <a href="https://github.com/Nut007aaa/rizzglam">
     <img src="assets/projects/rizzglam.svg" alt="RizzGlam" width="100%" />
   </a>
 </td>
@@ -132,7 +132,7 @@ My portfolio includes projects ranging from autonomous AI agents to complex cons
 <tr>
 
 <td align="center" width="50%">
-  <a href="https://github.com/username/90-days">
+  <a href="https://github.com/Nut007aaa/90-days">
     <img src="assets/projects/90-days.svg" alt="90 Days Coding Challenge" width="100%" />
   </a>
 </td>
@@ -151,18 +151,18 @@ My portfolio includes projects ranging from autonomous AI agents to complex cons
   <table border="0">
     <tr>
       <td width="50%">
-        <img src="https://github-readme-stats.vercel.app/api?username=username&show_icons=true&theme=react&hide_border=true&bg_color=0B1120&title_color=38BDF8&icon_color=8B5CF6&text_color=F8FAFC" alt="GitHub Stats" width="100%" />
+        <img src="https://github-readme-stats.vercel.app/api?Nut007aaa=Nut007aaa&show_icons=true&theme=react&hide_border=true&bg_color=0B1120&title_color=38BDF8&icon_color=8B5CF6&text_color=F8FAFC" alt="GitHub Stats" width="100%" />
       </td>
       <td width="50%">
-        <img src="https://github-readme-streak-stats.herokuapp.com/?user=username&theme=react&hide_border=true&background=0B1120&ring=38BDF8&fire=8B5CF6&currStreakLabel=F8FAFC" alt="GitHub Streak" width="100%" />
+        <img src="https://github-readme-streak-stats.herokuapp.com/?user=Nut007aaa&theme=react&hide_border=true&background=0B1120&ring=38BDF8&fire=8B5CF6&currStreakLabel=F8FAFC" alt="GitHub Streak" width="100%" />
       </td>
     </tr>
   </table>
   <br />
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/username/username/output/dist/github-snake-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/username/username/output/dist/github-snake.svg">
-    <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/username/username/output/dist/github-snake.svg" width="100%">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Nut007aaa/Nut007aaa/output/dist/github-snake-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Nut007aaa/Nut007aaa/output/dist/github-snake.svg">
+    <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/Nut007aaa/Nut007aaa/output/dist/github-snake.svg" width="100%">
   </picture>
 </div>
 
@@ -205,7 +205,7 @@ My portfolio includes projects ranging from autonomous AI agents to complex cons
 
 <div align="center">
   <a href="https://spotify.com">
-    <img src="https://spotify-github-profile.vercel.app/api/view?uid=username&cover_image=true&theme=novathem&bar_color=38BDF8&bar_color_cover=false" alt="Spotify Listening" />
+    <img src="https://spotify-github-profile.vercel.app/api/view?uid=Nut007aaa&cover_image=true&theme=novathem&bar_color=38BDF8&bar_color_cover=false" alt="Spotify Listening" />
   </a>
 </div>
 

@@ -3,13 +3,13 @@
 Welcome to the Premium GitHub Profile Kit. Follow these steps to deploy this profile to your GitHub account.
 
 ## 1. Repository Setup
-1. Create a new repository on GitHub with the exact same name as your GitHub username (e.g., `username/username`).
+1. Create a new repository on GitHub with the exact same name as your GitHub Nut007aaa (e.g., `Nut007aaa/Nut007aaa`).
 2. Make sure the repository is **Public**.
 3. Initialize it with a README (or leave it blank since we provide one).
 
 ## 2. Copy the Files
 1. Copy the contents of this kit into your new repository.
-2. Replace all instances of `username` in the `README.md` and `.github/workflows/` files with your actual GitHub username.
+2. Replace all instances of `Nut007aaa` in the `README.md` and `.github/workflows/` files with your actual GitHub Nut007aaa.
 
 ## 3. Configure Secrets
 To enable the automated workflows (WakaTime and Metrics):
