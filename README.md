@@ -302,8 +302,8 @@ My portfolio includes projects ranging from autonomous AI agents to complex cons
 ## 🎵 Currently Listening To
 
 <div align="center">
-  <a href="https://spotify.com">
-    <img src="https://spotify-github-profile.vercel.app/api/view?uid=Nut007aaa&cover_image=true&theme=novathem&bar_color=38BDF8&bar_color_cover=false" alt="Spotify Listening" />
+  <a href="https://open.spotify.com" target="_blank">
+    <img src="assets/svg/spotify.svg" alt="Spotify Listening" />
   </a>
 </div>
 

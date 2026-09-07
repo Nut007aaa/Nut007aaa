@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="110" viewBox="0 0 480 110" fill="none">
+  <defs>
+    <linearGradient id="spot-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1DB954" stop-opacity="0.15" />
+      <stop offset="100%" stop-color="#050816" stop-opacity="0.9" />
+    </linearGradient>
+    <linearGradient id="spot-border" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1DB954" stop-opacity="0.5" />
+      <stop offset="100%" stop-color="#1DB954" stop-opacity="0.1" />
+    </linearGradient>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&amp;display=swap');
+      .title { font-family: 'Inter', sans-serif; font-weight: 700; font-size: 15px; fill: #F8FAFC; }
+      .artist { font-family: 'Inter', sans-serif; font-weight: 400; font-size: 13px; fill: #94A3B8; }
+      .tag { font-family: 'Inter', sans-serif; font-weight: 700; font-size: 10px; fill: #1DB954; letter-spacing: 1px; }
+      
+      .bar { transform-origin: 50% 100%; animation: bounce 1.2s ease-in-out infinite alternate; fill: #1DB954; }
+      .bar1 { animation-delay: 0.1s; }
+      .bar2 { animation-delay: 0.4s; }
+      .bar3 { animation-delay: 0.2s; }
+      .bar4 { animation-delay: 0.6s; }
+      .bar5 { animation-delay: 0.3s; }
+      
+      @keyframes bounce {
+        0% { transform: scaleY(0.2); }
+        100% { transform: scaleY(1); }
+      }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="480" height="110" rx="16" fill="#0B1120" />
+  <rect width="480" height="110" rx="16" fill="url(#spot-bg)" stroke="url(#spot-border)" stroke-width="1.5" />
+
+  <!-- Equalizer Visualizer Block -->
+  <g transform="translate(24, 25)">
+    <rect width="60" height="60" rx="14" fill="#1DB954" fill-opacity="0.15" stroke="#1DB954" stroke-opacity="0.3" stroke-width="1" />
+    
+    <!-- 5 Animated Equalizer Bars -->
+    <g transform="translate(18, 50)">
+      <rect x="0" y="-32" width="4" height="32" rx="2" class="bar bar1" />
+      <rect x="6" y="-32" width="4" height="32" rx="2" class="bar bar2" />
+      <rect x="12" y="-32" width="4" height="32" rx="2" class="bar bar3" />
+      <rect x="18" y="-32" width="4" height="32" rx="2" class="bar bar4" />
+      <rect x="24" y="-32" width="4" height="32" rx="2" class="bar bar5" />
+    </g>
+  </g>
+
+  <!-- Track Details -->
+  <g transform="translate(102, 32)">
+    <text x="0" y="10" class="tag">SPOTIFY • NOW PLAYING</text>
+    <text x="0" y="32" class="title">Deep Work &amp; High-Velocity Coding</text>
+    <text x="0" y="52" class="artist">Synthwave • Lo-Fi Beats • Ambient Electronica</text>
+  </g>
+
+  <!-- Official Spotify Logo Emblem -->
+  <g transform="translate(415, 38)">
+    <circle cx="17" cy="17" r="17" fill="#1DB954" />
+    <path d="M10 14c4-1 9-.8 13.5 1m-13 4.5c3.5-.8 8-.6 11.5 1m-10.5 4.5c3-.6 6.5-.4 9.5.8" stroke="#0B1120" stroke-width="2.5" stroke-linecap="round" fill="none" />
+  </g>
+</svg>
