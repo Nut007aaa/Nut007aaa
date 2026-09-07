@@ -178,6 +178,44 @@ certs = [
         "color1": "#14B8A6",
         "color2": "#38BDF8",
         "accent": "#34A853"
+    },
+
+    # --- Industry Simulations & Honors ---
+    {
+        "id": "aws-solutions-architecture-forage",
+        "title": "AWS Solutions Architecture Simulation",
+        "issuer": "AWS • Forage Certified",
+        "badge_type": "Job Simulation • Issued Jan 2026",
+        "category": "Cloud Architecture & Solutions Design",
+        "desc": "Designing resilient, highly available AWS architectures, cost-optimized compute, multi-tier VPCs, and storage strategies.",
+        "tags": ["AWS Architecture", "Solutions Design", "Cloud Systems", "ID: pBdoefEGGx..."],
+        "color1": "#FF9900",
+        "color2": "#38BDF8",
+        "accent": "#FF9900"
+    },
+    {
+        "id": "forage-data-labeling-simulation",
+        "title": "Data Labeling Job Simulation",
+        "issuer": "Forage Academy Certified",
+        "badge_type": "Job Simulation • Issued Jan 2026",
+        "category": "AI Data Engineering & ML Quality",
+        "desc": "Hands-on data annotation pipelines, semantic segmentation, bounding box verification, and training dataset quality assurance.",
+        "tags": ["Data Labeling", "ML Datasets", "Annotation", "ID: px874ydEdX..."],
+        "color1": "#0084FF",
+        "color2": "#8B5CF6",
+        "accent": "#0084FF"
+    },
+    {
+        "id": "tata-crucible-campus-quiz-2025",
+        "title": "TATA Crucible Campus Quiz 2025",
+        "issuer": "TATA & Unstop Verified",
+        "badge_type": "Certificate of Participation • Nov 2025",
+        "category": "Competitive Tech & Business Quizzing",
+        "desc": "Participated in India's premier campus business and technology quizzing championship organized by TATA and Unstop.",
+        "tags": ["TATA Crucible", "Unstop", "Tech Strategy", "ID: d3fc9eec-4f..."],
+        "color1": "#006699",
+        "color2": "#38BDF8",
+        "accent": "#006699"
     }
 ]
 
@@ -233,17 +271,17 @@ cert_template = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 240"
 
   <!-- Skill Tags -->
   <g transform="translate(25, 158)">
-    <rect x="0" y="0" width="130" height="24" rx="6" fill="#1E293B" fill-opacity="0.8" stroke="{color1}" stroke-opacity="0.3" stroke-width="1"/>
-    <text x="65" y="16" text-anchor="middle" class="tag-text">{tag1}</text>
+    <rect x="0" y="0" width="135" height="24" rx="6" fill="#1E293B" fill-opacity="0.8" stroke="{color1}" stroke-opacity="0.3" stroke-width="1"/>
+    <text x="67" y="16" text-anchor="middle" class="tag-text">{tag1}</text>
 
-    <rect x="140" y="0" width="135" height="24" rx="6" fill="#1E293B" fill-opacity="0.8" stroke="{color1}" stroke-opacity="0.3" stroke-width="1"/>
-    <text x="207" y="16" text-anchor="middle" class="tag-text">{tag2}</text>
+    <rect x="145" y="0" width="135" height="24" rx="6" fill="#1E293B" fill-opacity="0.8" stroke="{color1}" stroke-opacity="0.3" stroke-width="1"/>
+    <text x="212" y="16" text-anchor="middle" class="tag-text">{tag2}</text>
 
-    <rect x="285" y="0" width="130" height="24" rx="6" fill="#1E293B" fill-opacity="0.8" stroke="{color1}" stroke-opacity="0.3" stroke-width="1"/>
-    <text x="350" y="16" text-anchor="middle" class="tag-text">{tag3}</text>
+    <rect x="290" y="0" width="130" height="24" rx="6" fill="#1E293B" fill-opacity="0.8" stroke="{color1}" stroke-opacity="0.3" stroke-width="1"/>
+    <text x="355" y="16" text-anchor="middle" class="tag-text">{tag3}</text>
 
-    <rect x="425" y="0" width="145" height="24" rx="6" fill="#1E293B" fill-opacity="0.8" stroke="{color1}" stroke-opacity="0.3" stroke-width="1"/>
-    <text x="497" y="16" text-anchor="middle" class="tag-text">{tag4}</text>
+    <rect x="430" y="0" width="140" height="24" rx="6" fill="#1E293B" fill-opacity="0.8" stroke="{color1}" stroke-opacity="0.3" stroke-width="1"/>
+    <text x="500" y="16" text-anchor="middle" class="tag-text">{tag4}</text>
   </g>
 
   <!-- Verification Footer -->
@@ -251,7 +289,7 @@ cert_template = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 240"
     <rect x="0" y="0" width="150" height="24" rx="12" fill="#F8FAFC" />
     <text x="75" y="16" text-anchor="middle" font-family="Inter" font-weight="700" font-size="10" fill="#050816">VERIFIED BADGE ✓</text>
     
-    <text x="550" y="16" text-anchor="end" font-family="Inter" font-weight="600" font-size="12" fill="#38BDF8">Google Cloud &amp; Microsoft Skills Boost</text>
+    <text x="550" y="16" text-anchor="end" font-family="Inter" font-weight="600" font-size="12" fill="#38BDF8">Official License &amp; Credential</text>
   </g>
 </svg>"""
 

@@ -41,14 +41,14 @@
 
 > **Building real-world products at the intersection of Artificial Intelligence, Cloud Infrastructure, and Premium Design.**
 
-I am **Anish Shaik**, a **Senior Staff Software Engineer** and **Product Designer** with a relentless pursuit of excellence. My work doesn't just function—it performs beautifully. I specialize in crafting autonomous AI agent architectures, resilient cloud infrastructure on Google Cloud & Microsoft ecosystems, Kubernetes orchestration, and responsive digital products with an uncompromising focus on user experience.
+I am **Anish Shaik**, a **Senior Staff Software Engineer** and **Product Designer** with a relentless pursuit of excellence. My work doesn't just function—it performs beautifully. I specialize in crafting autonomous AI agent architectures, resilient multi-cloud infrastructure on AWS & Google Cloud ecosystems, Kubernetes orchestration, and responsive digital products with an uncompromising focus on user experience.
 
 ---
 
 ## 🏆 Verified Certifications & Badges
 
 <div align="center">
-  <p>Official credentials and skill badges recognized by <b>Google Cloud</b> and <b>Microsoft</b> via <b>Credly</b> & <b>Skills Boost</b>.</p>
+  <p>Official credentials and verified badges recognized across <b>Google Cloud</b>, <b>AWS</b>, <b>Microsoft</b>, and <b>Forage</b>.</p>
 </div>
 
 
@@ -152,15 +152,39 @@ I am **Anish Shaik**, a **Senior Staff Software Engineer** and **Product Designe
 </table>
 
 
+<br/>
+
+### 🏛️ Industry Simulations & Competitive Honors
+<table border="0" width="100%">
+<tr>
+
+<td align="center" width="50%">
+  <img src="assets/certifications/aws-solutions-architecture-forage.svg" alt="AWS Solutions Architecture Job Simulation - Forage" width="100%" />
+</td>
+
+<td align="center" width="50%">
+  <img src="assets/certifications/forage-data-labeling-simulation.svg" alt="Data Labeling Job Simulation - Forage Academy" width="100%" />
+</td>
+</tr>
+<tr>
+
+<td align="center" width="50%">
+  <img src="assets/certifications/tata-crucible-campus-quiz-2025.svg" alt="TATA Crucible Campus Quiz 2025 - Unstop" width="100%" />
+</td>
+<td width="50%"></td>
+</tr>
+</table>
+
+
 
 <div align="center">
   <img src="assets/svg/divider.svg" width="100%" />
 </div>
 
-## 🎖️ Credly Verified Skills
+## 🎖️ Credly & Industry Verified Skills
 
 <div align="center">
-  <p><i>Official skill competencies verified by Credly, Google Cloud, and Microsoft.</i></p>
+  <p><i>Official skill competencies verified by Credly, Google Cloud, AWS, and Forage.</i></p>
 </div>
 
 <div align="center">
@@ -168,6 +192,7 @@ I am **Anish Shaik**, a **Senior Staff Software Engineer** and **Product Designe
   <img src="https://img.shields.io/badge/Artificial%20Intelligence-Verified-FF6B00?style=for-the-badge&logo=credly&logoColor=white" />
   <img src="https://img.shields.io/badge/AI%20Ethics-Verified-FF6B00?style=for-the-badge&logo=credly&logoColor=white" />
   <img src="https://img.shields.io/badge/AI%20Applications-Verified-FF6B00?style=for-the-badge&logo=credly&logoColor=white" />
+  <img src="https://img.shields.io/badge/AWS%20Solutions%20Architecture-Verified-FF9900?style=for-the-badge&logo=amazon-aws&logoColor=white" />
   <img src="https://img.shields.io/badge/Kubernetes%20(GKE)-Verified-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white" />
   <img src="https://img.shields.io/badge/Terraform%20(IaC)-Verified-844FBA?style=for-the-badge&logo=terraform&logoColor=white" />
   <img src="https://img.shields.io/badge/Cloud%20Load%20Balancing-Verified-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white" />
@@ -175,6 +200,7 @@ I am **Anish Shaik**, a **Senior Staff Software Engineer** and **Product Designe
   <img src="https://img.shields.io/badge/Agent%20Dev%20Kit%20(ADK)-Verified-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white" />
   <img src="https://img.shields.io/badge/Gemini%20AI%20API-Verified-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white" />
   <img src="https://img.shields.io/badge/BigQuery%20Analytics-Verified-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white" />
+  <img src="https://img.shields.io/badge/Data%20Labeling%20&%20ML%20Prep-Verified-0084FF?style=for-the-badge&logo=forage&logoColor=white" />
   <img src="https://img.shields.io/badge/Cloud%20Security%20&%20IAM-Verified-EA4335?style=for-the-badge&logo=google-cloud&logoColor=white" />
   <img src="https://img.shields.io/badge/Build%20Automation-Verified-FF6B00?style=for-the-badge&logo=credly&logoColor=white" />
   <img src="https://img.shields.io/badge/Cloud%20Storage-Verified-34A853?style=for-the-badge&logo=google-cloud&logoColor=white" />
@@ -192,13 +218,13 @@ I am **Anish Shaik**, a **Senior Staff Software Engineer** and **Product Designe
   <tr>
     <td align="right" width="24%"><b>AI & Autonomous Agents</b></td>
     <td width="76%">
-      <img src="https://img.shields.io/badge/Gemini AI-0B1120?style=for-the-badge&logo=google-cloud&logoColor=white" />       <img src="https://img.shields.io/badge/Agent Dev Kit (ADK)-0B1120?style=for-the-badge&logo=google-cloud&logoColor=white" />       <img src="https://img.shields.io/badge/Vertex AI-0B1120?style=for-the-badge&logo=google-cloud&logoColor=white" />       <img src="https://img.shields.io/badge/PyTorch-0B1120?style=for-the-badge&logo=pytorch&logoColor=white" />       <img src="https://img.shields.io/badge/FastAPI-0B1120?style=for-the-badge&logo=fastapi&logoColor=white" /> 
+      <img src="https://img.shields.io/badge/Gemini AI-0B1120?style=for-the-badge&logo=google-cloud&logoColor=white" />       <img src="https://img.shields.io/badge/Agent Dev Kit (ADK)-0B1120?style=for-the-badge&logo=google-cloud&logoColor=white" />       <img src="https://img.shields.io/badge/Vertex AI-0B1120?style=for-the-badge&logo=google-cloud&logoColor=white" />       <img src="https://img.shields.io/badge/Data Labeling-0B1120?style=for-the-badge&logo=forage&logoColor=white" />       <img src="https://img.shields.io/badge/PyTorch-0B1120?style=for-the-badge&logo=pytorch&logoColor=white" />       <img src="https://img.shields.io/badge/FastAPI-0B1120?style=for-the-badge&logo=fastapi&logoColor=white" /> 
     </td>
   </tr>
   <tr>
-    <td align="right" width="24%"><b>Cloud, K8s & DevOps</b></td>
+    <td align="right" width="24%"><b>Cloud, K8s & AWS</b></td>
     <td width="76%">
-      <img src="https://img.shields.io/badge/Google Cloud-0B1120?style=for-the-badge&logo=google-cloud&logoColor=white" />       <img src="https://img.shields.io/badge/Kubernetes-0B1120?style=for-the-badge&logo=kubernetes&logoColor=white" />       <img src="https://img.shields.io/badge/Terraform-0B1120?style=for-the-badge&logo=terraform&logoColor=white" />       <img src="https://img.shields.io/badge/Compute Engine-0B1120?style=for-the-badge&logo=google-cloud&logoColor=white" />       <img src="https://img.shields.io/badge/Docker-0B1120?style=for-the-badge&logo=docker&logoColor=white" /> 
+      <img src="https://img.shields.io/badge/AWS Architecture-0B1120?style=for-the-badge&logo=amazon-aws&logoColor=white" />       <img src="https://img.shields.io/badge/Google Cloud-0B1120?style=for-the-badge&logo=google-cloud&logoColor=white" />       <img src="https://img.shields.io/badge/Kubernetes-0B1120?style=for-the-badge&logo=kubernetes&logoColor=white" />       <img src="https://img.shields.io/badge/Terraform-0B1120?style=for-the-badge&logo=terraform&logoColor=white" />       <img src="https://img.shields.io/badge/Compute Engine-0B1120?style=for-the-badge&logo=google-cloud&logoColor=white" />       <img src="https://img.shields.io/badge/Docker-0B1120?style=for-the-badge&logo=docker&logoColor=white" /> 
     </td>
   </tr>
   <tr>
@@ -229,7 +255,7 @@ I am **Anish Shaik**, a **Senior Staff Software Engineer** and **Product Designe
 
 ## 🏗️ System Architecture & Design
 
-I architect systems for scale. From edge-deployed serverless functions to heavy GPU-bound ML microservices, managed GKE Kubernetes clusters, and load-balanced Compute Engine fleets, my systems are designed with high availability, low latency, and robust observability.
+I architect systems for scale. From edge-deployed serverless functions to heavy GPU-bound ML microservices, multi-tier AWS architectures, managed GKE Kubernetes clusters, and load-balanced Compute Engine fleets, my systems are designed with high availability, low latency, and robust observability.
 
 <div align="center">
   <img src="assets/svg/architecture.svg" width="100%" alt="System Architecture">
@@ -324,8 +350,8 @@ My portfolio includes projects ranging from autonomous AI agents to complex cons
         <small>Agent Dev Kit • Multi-Agent Loops</small>
       </td>
       <td align="center" width="25%">
-        <b>☁️ Cloud Infrastructure</b><br/>
-        <small>Kubernetes • Terraform • Load Balancing</small>
+        <b>☁️ Multi-Cloud & IaC</b><br/>
+        <small>AWS • GCP • Kubernetes • Terraform</small>
       </td>
       <td align="center" width="25%">
         <b>⚡ High-Scale Systems</b><br/>
@@ -348,14 +374,16 @@ My portfolio includes projects ranging from autonomous AI agents to complex cons
 
 ## 🎓 Education & Credentials
 
-### 🤖 AI & Machine Learning
+### 🤖 AI, Multi-Agent Systems & Machine Learning
 * **Microsoft Certified**: AI Skills Fest 2026 (Credly Verified)
 * **Google Cloud Skill Badge**: Engineer AI Agents with Agent Development Kit (ADK)
 * **Google Cloud Skill Badge**: Create Your First Gemini Enterprise Application
 * **Google Cloud Completion Badge**: AI Boost Bites - Personal Feedback Agent
 * **Google Cloud Skill Badge**: Prepare Data for ML APIs on Google Cloud
+* **Forage Academy**: Data Labeling Job Simulation (Issued Jan 2026 | ID: `px874ydEdXSye3kuL`)
 
-### ☁️ Cloud Infrastructure, Kubernetes & IaC
+### ☁️ Cloud Infrastructure, Kubernetes & AWS
+* **AWS / Forage**: AWS - Solutions Architecture Job Simulation (Issued Jan 2026 | ID: `pBdoefEGGxrTMHxr4`)
 * **Google Cloud Skill Badge**: Manage Kubernetes in Google Cloud (GKE)
 * **Google Cloud Skill Badge**: Build Infrastructure with Terraform on Google Cloud
 * **Google Cloud Skill Badge**: Implementing Cloud Load Balancing for Compute Engine
@@ -367,6 +395,9 @@ My portfolio includes projects ranging from autonomous AI agents to complex cons
 * **Google Cloud Skill Badge**: Implement Cloud Security Fundamentals on Google Cloud
 * **Google Cloud Skill Badge**: Build a Data Warehouse with BigQuery
 * **Google Cloud Skill Badge**: Implement Cloud Storage and Data Protection Solutions
+
+### 🏆 Honors & Competitive Achievements
+* **Unstop / TATA**: Certificate of Participation in TATA Crucible Campus Quiz 2025 (Issued Nov 2025 | ID: `d3fc9eec-4fe0-41f6-b64f-111b6cd25a1e`)
 
 ### 🏛️ Academic Background
 * **M.S. Computer Science** (Specialization in Artificial Intelligence)

@@ -37,7 +37,6 @@ def generate_cert_grid(cert_list):
   <img src="assets/certifications/{c['id']}.svg" alt="{c['title']}" width="100%" />
 </td>
 '''
-    # If odd number of items, fill with an empty cell
     if len(cert_list) % 2 != 0:
         html += '<td width="50%"></td>\n'
     html += '</tr>\n</table>\n'
@@ -66,6 +65,11 @@ def generate_all_certifications_section():
         {"id": "google-cloud-bigquery-data-warehouse", "title": "Build a Data Warehouse with BigQuery - Google Cloud"},
         {"id": "google-cloud-storage-data-protection", "title": "Cloud Storage & Data Protection - Google Cloud"}
     ]
+    simulation_certs = [
+        {"id": "aws-solutions-architecture-forage", "title": "AWS Solutions Architecture Job Simulation - Forage"},
+        {"id": "forage-data-labeling-simulation", "title": "Data Labeling Job Simulation - Forage Academy"},
+        {"id": "tata-crucible-campus-quiz-2025", "title": "TATA Crucible Campus Quiz 2025 - Unstop"}
+    ]
 
     html = f"""
 ### 🤖 Artificial Intelligence & Multi-Agent Systems
@@ -85,6 +89,11 @@ def generate_all_certifications_section():
 
 ### 📊 Data Warehousing & Cloud Storage
 {generate_cert_grid(data_certs)}
+
+<br/>
+
+### 🏛️ Industry Simulations & Competitive Honors
+{generate_cert_grid(simulation_certs)}
 """
     return html
 
@@ -94,6 +103,7 @@ def generate_credly_skills():
         ("Artificial Intelligence", "credly", "FF6B00"),
         ("AI Ethics", "credly", "FF6B00"),
         ("AI Applications", "credly", "FF6B00"),
+        ("AWS Solutions Architecture", "amazon-aws", "FF9900"),
         ("Kubernetes (GKE)", "kubernetes", "326CE5"),
         ("Terraform (IaC)", "terraform", "844FBA"),
         ("Cloud Load Balancing", "google-cloud", "4285F4"),
@@ -101,6 +111,7 @@ def generate_credly_skills():
         ("Agent Dev Kit (ADK)", "google-cloud", "4285F4"),
         ("Gemini AI API", "google-cloud", "4285F4"),
         ("BigQuery Analytics", "google-cloud", "4285F4"),
+        ("Data Labeling & ML Prep", "forage", "0084FF"),
         ("Cloud Security & IAM", "google-cloud", "EA4335"),
         ("Build Automation", "credly", "FF6B00"),
         ("Cloud Storage", "google-cloud", "34A853")
@@ -117,10 +128,12 @@ def generate_tech_stack():
             ("Gemini AI", "google-cloud"),
             ("Agent Dev Kit (ADK)", "google-cloud"),
             ("Vertex AI", "google-cloud"),
+            ("Data Labeling", "forage"),
             ("PyTorch", "pytorch"),
             ("FastAPI", "fastapi")
         ],
-        "Cloud, K8s & DevOps": [
+        "Cloud, K8s & AWS": [
+            ("AWS Architecture", "amazon-aws"),
             ("Google Cloud", "google-cloud"),
             ("Kubernetes", "kubernetes"),
             ("Terraform", "terraform"),
@@ -202,14 +215,14 @@ readme_content = f"""<!--
 
 > **Building real-world products at the intersection of Artificial Intelligence, Cloud Infrastructure, and Premium Design.**
 
-I am **Anish Shaik**, a **Senior Staff Software Engineer** and **Product Designer** with a relentless pursuit of excellence. My work doesn't just function—it performs beautifully. I specialize in crafting autonomous AI agent architectures, resilient cloud infrastructure on Google Cloud & Microsoft ecosystems, Kubernetes orchestration, and responsive digital products with an uncompromising focus on user experience.
+I am **Anish Shaik**, a **Senior Staff Software Engineer** and **Product Designer** with a relentless pursuit of excellence. My work doesn't just function—it performs beautifully. I specialize in crafting autonomous AI agent architectures, resilient multi-cloud infrastructure on AWS & Google Cloud ecosystems, Kubernetes orchestration, and responsive digital products with an uncompromising focus on user experience.
 
 ---
 
 ## 🏆 Verified Certifications & Badges
 
 <div align="center">
-  <p>Official credentials and skill badges recognized by <b>Google Cloud</b> and <b>Microsoft</b> via <b>Credly</b> & <b>Skills Boost</b>.</p>
+  <p>Official credentials and verified badges recognized across <b>Google Cloud</b>, <b>AWS</b>, <b>Microsoft</b>, and <b>Forage</b>.</p>
 </div>
 
 {generate_all_certifications_section()}
@@ -218,10 +231,10 @@ I am **Anish Shaik**, a **Senior Staff Software Engineer** and **Product Designe
   <img src="assets/svg/divider.svg" width="100%" />
 </div>
 
-## 🎖️ Credly Verified Skills
+## 🎖️ Credly & Industry Verified Skills
 
 <div align="center">
-  <p><i>Official skill competencies verified by Credly, Google Cloud, and Microsoft.</i></p>
+  <p><i>Official skill competencies verified by Credly, Google Cloud, AWS, and Forage.</i></p>
 </div>
 
 {generate_credly_skills()}
@@ -242,7 +255,7 @@ I am **Anish Shaik**, a **Senior Staff Software Engineer** and **Product Designe
 
 ## 🏗️ System Architecture & Design
 
-I architect systems for scale. From edge-deployed serverless functions to heavy GPU-bound ML microservices, managed GKE Kubernetes clusters, and load-balanced Compute Engine fleets, my systems are designed with high availability, low latency, and robust observability.
+I architect systems for scale. From edge-deployed serverless functions to heavy GPU-bound ML microservices, multi-tier AWS architectures, managed GKE Kubernetes clusters, and load-balanced Compute Engine fleets, my systems are designed with high availability, low latency, and robust observability.
 
 <div align="center">
   <img src="assets/svg/architecture.svg" width="100%" alt="System Architecture">
@@ -297,8 +310,8 @@ My portfolio includes projects ranging from autonomous AI agents to complex cons
         <small>Agent Dev Kit • Multi-Agent Loops</small>
       </td>
       <td align="center" width="25%">
-        <b>☁️ Cloud Infrastructure</b><br/>
-        <small>Kubernetes • Terraform • Load Balancing</small>
+        <b>☁️ Multi-Cloud & IaC</b><br/>
+        <small>AWS • GCP • Kubernetes • Terraform</small>
       </td>
       <td align="center" width="25%">
         <b>⚡ High-Scale Systems</b><br/>
@@ -321,14 +334,16 @@ My portfolio includes projects ranging from autonomous AI agents to complex cons
 
 ## 🎓 Education & Credentials
 
-### 🤖 AI & Machine Learning
+### 🤖 AI, Multi-Agent Systems & Machine Learning
 * **Microsoft Certified**: AI Skills Fest 2026 (Credly Verified)
 * **Google Cloud Skill Badge**: Engineer AI Agents with Agent Development Kit (ADK)
 * **Google Cloud Skill Badge**: Create Your First Gemini Enterprise Application
 * **Google Cloud Completion Badge**: AI Boost Bites - Personal Feedback Agent
 * **Google Cloud Skill Badge**: Prepare Data for ML APIs on Google Cloud
+* **Forage Academy**: Data Labeling Job Simulation (Issued Jan 2026 | ID: `px874ydEdXSye3kuL`)
 
-### ☁️ Cloud Infrastructure, Kubernetes & IaC
+### ☁️ Cloud Infrastructure, Kubernetes & AWS
+* **AWS / Forage**: AWS - Solutions Architecture Job Simulation (Issued Jan 2026 | ID: `pBdoefEGGxrTMHxr4`)
 * **Google Cloud Skill Badge**: Manage Kubernetes in Google Cloud (GKE)
 * **Google Cloud Skill Badge**: Build Infrastructure with Terraform on Google Cloud
 * **Google Cloud Skill Badge**: Implementing Cloud Load Balancing for Compute Engine
@@ -340,6 +355,9 @@ My portfolio includes projects ranging from autonomous AI agents to complex cons
 * **Google Cloud Skill Badge**: Implement Cloud Security Fundamentals on Google Cloud
 * **Google Cloud Skill Badge**: Build a Data Warehouse with BigQuery
 * **Google Cloud Skill Badge**: Implement Cloud Storage and Data Protection Solutions
+
+### 🏆 Honors & Competitive Achievements
+* **Unstop / TATA**: Certificate of Participation in TATA Crucible Campus Quiz 2025 (Issued Nov 2025 | ID: `d3fc9eec-4fe0-41f6-b64f-111b6cd25a1e`)
 
 ### 🏛️ Academic Background
 * **M.S. Computer Science** (Specialization in Artificial Intelligence)
@@ -380,4 +398,4 @@ for i in range(25):
 with open(readme_path, 'w', encoding='utf-8') as f:
     f.write(readme_content.strip())
 
-print("README.md generated successfully with all 14 certifications!")
+print("README.md generated successfully with all 17 credentials!")
