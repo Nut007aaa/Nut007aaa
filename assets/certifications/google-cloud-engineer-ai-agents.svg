@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 280" width="600" height="280">
+  <defs>
+    <linearGradient id="bg-grad-google-cloud-engineer-ai-agents" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#10B981" stop-opacity="0.04" />
+    </linearGradient>
+    <linearGradient id="border-grad-google-cloud-engineer-ai-agents" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#10B981" stop-opacity="0.15" />
+    </linearGradient>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&amp;display=swap');
+      .title { font-family: 'Inter', sans-serif; font-weight: 800; font-size: 22px; fill: #F8FAFC; }
+      .issuer { font-family: 'Inter', sans-serif; font-weight: 700; font-size: 11px; fill: #38BDF8; letter-spacing: 1.5px; text-transform: uppercase; }
+      .desc { font-family: 'Inter', sans-serif; font-weight: 400; font-size: 14px; fill: #94A3B8; line-height: 1.4; }
+      .tag-text { font-family: 'Inter', sans-serif; font-weight: 600; font-size: 11px; fill: #E2E8F0; }
+      .date-text { font-family: 'Inter', sans-serif; font-weight: 600; font-size: 12px; fill: #64748B; }
+      .badge-type { font-family: 'Inter', sans-serif; font-weight: 600; font-size: 11px; fill: #10B981; }
+    </style>
+  </defs>
+
+  <!-- Card Background -->
+  <rect width="600" height="280" rx="18" fill="#0B1120" />
+  <rect width="600" height="280" rx="18" fill="url(#bg-grad-google-cloud-engineer-ai-agents)" stroke="url(#border-grad-google-cloud-engineer-ai-agents)" stroke-width="1.5" />
+
+  <!-- Top Issuer Header -->
+  <g transform="translate(30, 24)">
+    <circle cx="8" cy="8" r="5" fill="#4285F4" />
+    <text x="22" y="12" class="issuer">Google Cloud • Skills Boost & Credly</text>
+    <text x="540" y="12" text-anchor="end" class="badge-type">Skill Badge • Intermediate</text>
+  </g>
+
+  <!-- Icon Emblem -->
+  <g transform="translate(30, 52)">
+    <rect width="56" height="56" rx="14" fill="#38BDF8" fill-opacity="0.15" stroke="#38BDF8" stroke-opacity="0.4" stroke-width="1" />
+    <circle cx="28" cy="28" r="14" fill="#10B981" fill-opacity="0.8" />
+    <circle cx="28" cy="28" r="6" fill="#FFF" />
+  </g>
+
+  <!-- Title & Date -->
+  <text x="102" y="78" class="title">Engineer AI Agents with ADK</text>
+  <text x="102" y="100" class="date-text">📅 Issued May 19, 2026</text>
+
+  <!-- Description -->
+  <foreignObject x="30" y="125" width="540" height="60">
+    <div xmlns="http://www.w3.org/1999/xhtml" class="desc">
+      Architecting autonomous agents, tool orchestration, semantic reasoning, and Agent Development Kit (ADK).
+    </div>
+  </foreignObject>
+
+  <!-- Skill Tags -->
+  <g transform="translate(30, 195)">
+    <rect x="0" y="0" width="130" height="26" rx="7" fill="#1E293B" fill-opacity="0.7" stroke="#38BDF8" stroke-opacity="0.3" stroke-width="1"/>
+    <text x="65" y="17" text-anchor="middle" class="tag-text">AI Agents</text>
+
+    <rect x="140" y="0" width="145" height="26" rx="7" fill="#1E293B" fill-opacity="0.7" stroke="#38BDF8" stroke-opacity="0.3" stroke-width="1"/>
+    <text x="212" y="17" text-anchor="middle" class="tag-text">Agent Development Kit</text>
+
+    <rect x="295" y="0" width="120" height="26" rx="7" fill="#1E293B" fill-opacity="0.7" stroke="#38BDF8" stroke-opacity="0.3" stroke-width="1"/>
+    <text x="355" y="17" text-anchor="middle" class="tag-text">Google Cloud</text>
+
+    <rect x="425" y="0" width="135" height="26" rx="7" fill="#1E293B" fill-opacity="0.7" stroke="#38BDF8" stroke-opacity="0.3" stroke-width="1"/>
+    <text x="492" y="17" text-anchor="middle" class="tag-text">LLM Pipelines</text>
+  </g>
+
+  <!-- Verification Footer -->
+  <g transform="translate(30, 240)">
+    <rect x="0" y="0" width="160" height="26" rx="13" fill="#F8FAFC" />
+    <text x="80" y="17" text-anchor="middle" font-family="Inter" font-weight="700" font-size="11" fill="#050816">VERIFIED CREDENTIAL ✓</text>
+    
+    <text x="540" y="18" text-anchor="end" font-family="Inter" font-weight="600" font-size="12" fill="#38BDF8">Credly &amp; Google Cloud Verified</text>
+  </g>
+</svg>

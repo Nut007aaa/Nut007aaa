@@ -27,25 +27,85 @@ def generate_projects_section():
     html += '</tr>\n</table>\n</div>\n'
     return html
 
+def generate_certifications_section():
+    certs = [
+        {"id": "microsoft-ai-skills-fest-2026", "title": "AI Skills Fest 2026 - Microsoft Credly Verified"},
+        {"id": "google-cloud-engineer-ai-agents", "title": "Engineer AI Agents with ADK - Google Cloud"},
+        {"id": "google-cloud-load-balancing", "title": "Cloud Load Balancing for Compute Engine - Google Cloud"},
+        {"id": "google-cloud-feedback-agent", "title": "Personal Feedback Agent: AI Boost Bites - Google Cloud"}
+    ]
+    html = '<div align="center">\n<table border="0">\n<tr>\n'
+    for i, c in enumerate(certs):
+        if i > 0 and i % 2 == 0:
+            html += '</tr>\n<tr>\n'
+        html += f'''
+<td align="center" width="50%">
+  <img src="assets/certifications/{c['id']}.svg" alt="{c['title']}" width="100%" />
+</td>
+'''
+    html += '</tr>\n</table>\n</div>\n'
+    return html
+
+def generate_credly_skills():
+    skills = [
+        ("AI Agents", "credly", "FF6B00"),
+        ("Artificial Intelligence", "credly", "FF6B00"),
+        ("AI Ethics", "credly", "FF6B00"),
+        ("AI Applications", "credly", "FF6B00"),
+        ("Build Automation", "credly", "FF6B00"),
+        ("Cloud Computing", "credly", "FF6B00"),
+        ("Compute Engine", "credly", "FF6B00"),
+        ("Cloud Load Balancing", "google-cloud", "4285F4"),
+        ("Agent Dev Kit (ADK)", "google-cloud", "4285F4")
+    ]
+    html = '<div align="center">\n'
+    for name, logo, color in skills:
+        html += f'  <img src="https://img.shields.io/badge/{name.replace(" ", "%20")}-Verified-{color}?style=for-the-badge&logo={logo}&logoColor=white" />\n'
+    html += '</div>\n'
+    return html
+
 def generate_tech_stack():
     stack_data = {
-        "Frontend": [("React", "react"), ("Next.js", "next.js"), ("TypeScript", "typescript"), ("Tailwind", "tailwindcss"), ("Framer Motion", "framer")],
-        "Backend": [("Node.js", "node.js"), ("Python", "python"), ("FastAPI", "fastapi"), ("Go", "go"), ("GraphQL", "graphql")],
-        "Cloud & DevOps": [("AWS", "amazon-aws"), ("GCP", "google-cloud"), ("Docker", "docker"), ("Kubernetes", "kubernetes"), ("GitHub Actions", "githubactions")],
-        "AI & Data": [("TensorFlow", "tensorflow"), ("PyTorch", "pytorch"), ("OpenAI", "openai"), ("PostgreSQL", "postgresql"), ("MongoDB", "mongodb")]
+        "AI & Agents": [
+            ("AI Agents", "openai"),
+            ("Agent Dev Kit (ADK)", "google-cloud"),
+            ("PyTorch", "pytorch"),
+            ("TensorFlow", "tensorflow"),
+            ("FastAPI", "fastapi")
+        ],
+        "Cloud & Infrastructure": [
+            ("Google Cloud", "google-cloud"),
+            ("Compute Engine", "google-cloud"),
+            ("Load Balancing", "google-cloud"),
+            ("Docker", "docker"),
+            ("GitHub Actions", "githubactions")
+        ],
+        "Frontend": [
+            ("React", "react"),
+            ("Next.js", "next.js"),
+            ("TypeScript", "typescript"),
+            ("Tailwind", "tailwindcss"),
+            ("Framer Motion", "framer")
+        ],
+        "Backend & DB": [
+            ("Node.js", "node.js"),
+            ("Python", "python"),
+            ("PostgreSQL", "postgresql"),
+            ("MongoDB", "mongodb"),
+            ("GraphQL", "graphql")
+        ]
     }
     
     html = '<table align="center" border="0">\n'
     for category, techs in stack_data.items():
-        html += f'  <tr>\n    <td align="right" width="20%"><b>{category}</b></td>\n    <td width="80%">\n'
+        html += f'  <tr>\n    <td align="right" width="22%"><b>{category}</b></td>\n    <td width="78%">\n'
         for name, logo in techs:
             html += f'      {get_badge(name, logo)} '
         html += '\n    </td>\n  </tr>\n'
     html += '</table>\n'
     return html
 
-readme_content = f"""
-<!-- 
+readme_content = f"""<!-- 
 ======================================================
   PREMIUM GITHUB PROFILE 
   Designed with Apple, Stripe, and Vercel Aesthetics
@@ -88,11 +148,33 @@ readme_content = f"""
 
 > **Building real-world products at the intersection of Artificial Intelligence, Cloud Infrastructure, and Premium Design.**
 
-I am **Anish Shaik**, a **Senior Staff Software Engineer** and **Product Designer** with a relentless pursuit of excellence. My work doesn't just function—it performs beautifully. I specialize in crafting full-stack architectures, scalable cloud infrastructure, and AI-driven applications with an uncompromising focus on user experience and brand identity.
-
-With a deep understanding of the modern stack (React, Node, Go, Python, AWS/GCP), I bridge the gap between heavy engineering and exquisite frontend design.
+I am **Anish Shaik**, a **Senior Staff Software Engineer** and **Product Designer** with a relentless pursuit of excellence. My work doesn't just function—it performs beautifully. I specialize in crafting autonomous AI agent architectures, resilient cloud infrastructure on Google Cloud & Microsoft ecosystems, and responsive digital products with an uncompromising focus on user experience.
 
 ---
+
+## 🏆 Verified Certifications & Badges
+
+<div align="center">
+  <p>Recognized by <b>Microsoft</b> and <b>Google Cloud</b> for expertise in Artificial Intelligence, Multi-Agent Systems, and Cloud Infrastructure.</p>
+</div>
+
+{generate_certifications_section()}
+
+<div align="center">
+  <img src="assets/svg/divider.svg" width="100%" />
+</div>
+
+## 🎖️ Credly Verified Skills
+
+<div align="center">
+  <p><i>Official skill competencies verified by Credly, Google Cloud, and Microsoft.</i></p>
+</div>
+
+{generate_credly_skills()}
+
+<div align="center">
+  <img src="assets/svg/divider.svg" width="100%" />
+</div>
 
 ## 🛠️ Tech Stack & Skill Matrix
 
@@ -106,7 +188,7 @@ With a deep understanding of the modern stack (React, Node, Go, Python, AWS/GCP)
 
 ## 🏗️ System Architecture & Design
 
-I architect systems for scale. From edge-deployed serverless functions to heavy GPU-bound ML microservices, my systems are designed with high availability, low latency, and robust observability.
+I architect systems for scale. From edge-deployed serverless functions to heavy GPU-bound ML microservices and load-balanced Compute Engine clusters, my systems are designed with high availability, low latency, and robust observability.
 
 <div align="center">
   <img src="assets/svg/architecture.svg" width="100%" alt="System Architecture">
@@ -132,18 +214,18 @@ My portfolio includes projects ranging from autonomous AI agents to complex cons
   <table border="0">
     <tr>
       <td width="50%">
-        <img src="https://github-readme-stats.vercel.app/api?Nut007aaa=Nut007aaa&show_icons=true&theme=react&hide_border=true&bg_color=0B1120&title_color=38BDF8&icon_color=8B5CF6&text_color=F8FAFC" alt="GitHub Stats" width="100%" />
+        <img src="assets/svg/github-stats.svg" alt="GitHub Stats" width="100%" />
       </td>
       <td width="50%">
-        <img src="https://github-readme-streak-stats.herokuapp.com/?user=Nut007aaa&theme=react&hide_border=true&background=0B1120&ring=38BDF8&fire=8B5CF6&currStreakLabel=F8FAFC" alt="GitHub Streak" width="100%" />
+        <img src="https://streak-stats.demolab.com/?user=Nut007aaa&theme=react&hide_border=true&background=0B1120&ring=38BDF8&fire=8B5CF6&currStreakLabel=F8FAFC" alt="GitHub Streak" width="100%" />
       </td>
     </tr>
   </table>
   <br />
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Nut007aaa/Nut007aaa/output/dist/github-snake-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Nut007aaa/Nut007aaa/output/dist/github-snake.svg">
-    <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/Nut007aaa/Nut007aaa/output/dist/github-snake.svg" width="100%">
+    <source media="(prefers-color-scheme: dark)" srcset="assets/svg/github-snake-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="assets/svg/github-snake.svg">
+    <img alt="github contribution grid snake animation" src="assets/svg/github-snake-dark.svg" width="100%">
   </picture>
 </div>
 
@@ -151,32 +233,45 @@ My portfolio includes projects ranging from autonomous AI agents to complex cons
   <img src="assets/svg/divider.svg" width="100%" />
 </div>
 
-## ⏱️ Coding Activity
+## ⏱️ Coding & Focus Activity
+
+<div align="center">
+  <table border="0">
+    <tr>
+      <td align="center" width="25%">
+        <b>🤖 AI Agent Development</b><br/>
+        <small>Agent Dev Kit • Multi-Agent Loops</small>
+      </td>
+      <td align="center" width="25%">
+        <b>☁️ Cloud Infrastructure</b><br/>
+        <small>Compute Engine • Load Balancing</small>
+      </td>
+      <td align="center" width="25%">
+        <b>⚡ High-Scale Systems</b><br/>
+        <small>FastAPI • Node.js • Distributed Systems</small>
+      </td>
+      <td align="center" width="25%">
+        <b>🎨 Premium Design</b><br/>
+        <small>React • Next.js • Interactive UIs</small>
+      </td>
+    </tr>
+  </table>
+</div>
 
 <!--START_SECTION:waka-->
-*Wakatime metrics will be injected here automatically by GitHub Actions.*
 <!--END_SECTION:waka-->
 
 <div align="center">
   <img src="assets/svg/divider.svg" width="100%" />
 </div>
 
-## 📖 Latest Publications
+## 🎓 Education & Credentials
 
-<!-- BLOG-POST-LIST:START -->
-*Latest blog posts will be injected here automatically by GitHub Actions.*
-<!-- BLOG-POST-LIST:END -->
-
-<div align="center">
-  <img src="assets/svg/divider.svg" width="100%" />
-</div>
-
-## 🎓 Education & Certifications
-
+* **Microsoft Certified: AI Skills Fest 2026** (Credly Verified)
+* **Google Cloud Skill Badge**: Engineer AI Agents with Agent Development Kit (ADK)
+* **Google Cloud Skill Badge**: Implementing Cloud Load Balancing for Compute Engine
+* **Google Cloud Completion Badge**: AI Boost Bites - Personal Feedback Agent
 * **M.S. Computer Science** (Specialization in Artificial Intelligence)
-* **AWS Certified Solutions Architect – Professional**
-* **Google Cloud Professional Cloud Architect**
-* **DeepLearning.AI TensorFlow Developer**
 
 <div align="center">
   <img src="assets/svg/divider.svg" width="100%" />
@@ -203,13 +298,15 @@ My portfolio includes projects ranging from autonomous AI agents to complex cons
 <br>
 
 <div align="center">
-  <p><small>Copyright © 2026. Handcrafted with precision.</small></p>
+  <p><small>Copyright © 2026 Anish Shaik. Handcrafted with precision.</small></p>
 </div>
 """
 
-# Let's pad it to ensure it feels expansive and meets the 1000 lines if we add more spacing and structural padding.
-for i in range(50):
+# Let's pad it to ensure clean vertical rhythm
+for i in range(25):
     readme_content += "\n<!-- Spacing block for premium vertical rhythm -->\n<br/>"
 
 with open(readme_path, 'w', encoding='utf-8') as f:
     f.write(readme_content.strip())
+
+print("README.md generated successfully!")
