@@ -73,10 +73,10 @@ readme_content = f"""
 <br />
 
 <div align="center">
-  <a href="https://yourportfolio.com" target="_blank"><img src="https://img.shields.io/badge/Portfolio-050816?style=for-the-badge&logo=vercel&logoColor=white&borderColor=38BDF8" alt="Portfolio" /></a>
+  <a href="https://nut007aaa.github.io" target="_blank"><img src="https://img.shields.io/badge/Portfolio-050816?style=for-the-badge&logo=vercel&logoColor=white&borderColor=38BDF8" alt="Portfolio" /></a>
   <a href="https://linkedin.com/in/Nut007aaa" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-050816?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
   <a href="https://twitter.com/Nut007aaa" target="_blank"><img src="https://img.shields.io/badge/Twitter-050816?style=for-the-badge&logo=x&logoColor=white" alt="Twitter" /></a>
-  <a href="mailto:contact@domain.com" target="_blank"><img src="https://img.shields.io/badge/Email-050816?style=for-the-badge&logo=minutemailer&logoColor=white" alt="Email" /></a>
+  <a href="mailto:anish.shaiks007@gmail.com" target="_blank"><img src="https://img.shields.io/badge/Email-050816?style=for-the-badge&logo=minutemailer&logoColor=white" alt="Email" /></a>
   <a href="resume.pdf" target="_blank"><img src="https://img.shields.io/badge/Resume-050816?style=for-the-badge&logo=googledocs&logoColor=white" alt="Resume" /></a>
 </div>
 
@@ -88,7 +88,7 @@ readme_content = f"""
 
 > **Building real-world products at the intersection of Artificial Intelligence, Cloud Infrastructure, and Premium Design.**
 
-I am a **Senior Staff Software Engineer** and **Product Designer** with a relentless pursuit of excellence. My work doesn't just function—it performs beautifully. I specialize in crafting full-stack architectures, scalable cloud infrastructure, and AI-driven applications with an uncompromising focus on user experience and brand identity.
+I am **Anish Shaik**, a **Senior Staff Software Engineer** and **Product Designer** with a relentless pursuit of excellence. My work doesn't just function—it performs beautifully. I specialize in crafting full-stack architectures, scalable cloud infrastructure, and AI-driven applications with an uncompromising focus on user experience and brand identity.
 
 With a deep understanding of the modern stack (React, Node, Go, Python, AWS/GCP), I bridge the gap between heavy engineering and exquisite frontend design.
 
