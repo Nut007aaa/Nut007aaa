@@ -1,17 +1,17 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 240" width="600" height="240">
   <defs>
-    <linearGradient id="bg-grad-google-cloud-load-balancing" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#6366F1" stop-opacity="0.14" />
+    <linearGradient id="bg-grad-google-cloud-bigquery-data-warehouse" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284C7" stop-opacity="0.14" />
       <stop offset="100%" stop-color="#38BDF8" stop-opacity="0.04" />
     </linearGradient>
-    <linearGradient id="border-grad-google-cloud-load-balancing" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#6366F1" stop-opacity="0.6" />
+    <linearGradient id="border-grad-google-cloud-bigquery-data-warehouse" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284C7" stop-opacity="0.6" />
       <stop offset="100%" stop-color="#38BDF8" stop-opacity="0.15" />
     </linearGradient>
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&amp;display=swap');
       .title { font-family: 'Inter', sans-serif; font-weight: 800; font-size: 20px; fill: #F8FAFC; }
-      .issuer { font-family: 'Inter', sans-serif; font-weight: 700; font-size: 11px; fill: #6366F1; letter-spacing: 1.2px; text-transform: uppercase; }
+      .issuer { font-family: 'Inter', sans-serif; font-weight: 700; font-size: 11px; fill: #0284C7; letter-spacing: 1.2px; text-transform: uppercase; }
       .category { font-family: 'Inter', sans-serif; font-weight: 600; font-size: 11px; fill: #94A3B8; }
       .desc { font-family: 'Inter', sans-serif; font-weight: 400; font-size: 13px; fill: #94A3B8; line-height: 1.4; }
       .tag-text { font-family: 'Inter', sans-serif; font-weight: 600; font-size: 11px; fill: #E2E8F0; }
@@ -21,7 +21,7 @@
 
   <!-- Card Background -->
   <rect width="600" height="240" rx="16" fill="#0B1120" />
-  <rect width="600" height="240" rx="16" fill="url(#bg-grad-google-cloud-load-balancing)" stroke="url(#border-grad-google-cloud-load-balancing)" stroke-width="1.5" />
+  <rect width="600" height="240" rx="16" fill="url(#bg-grad-google-cloud-bigquery-data-warehouse)" stroke="url(#border-grad-google-cloud-bigquery-data-warehouse)" stroke-width="1.5" />
 
   <!-- Top Issuer Header -->
   <g transform="translate(25, 20)">
@@ -32,35 +32,35 @@
 
   <!-- Icon Emblem -->
   <g transform="translate(25, 42)">
-    <rect width="44" height="44" rx="12" fill="#6366F1" fill-opacity="0.15" stroke="#6366F1" stroke-opacity="0.4" stroke-width="1" />
+    <rect width="44" height="44" rx="12" fill="#0284C7" fill-opacity="0.15" stroke="#0284C7" stroke-opacity="0.4" stroke-width="1" />
     <circle cx="22" cy="22" r="11" fill="#38BDF8" fill-opacity="0.8" />
     <circle cx="22" cy="22" r="5" fill="#FFF" />
   </g>
 
   <!-- Title & Category -->
-  <text x="82" y="62" class="title">Cloud Load Balancing for Compute Engine</text>
-  <text x="82" y="80" class="category">📂 Infrastructure Modernization</text>
+  <text x="82" y="62" class="title">Build a Data Warehouse with BigQuery</text>
+  <text x="82" y="80" class="category">📂 Smart Analytics</text>
 
   <!-- Description -->
   <foreignObject x="25" y="98" width="550" height="52">
     <div xmlns="http://www.w3.org/1999/xhtml" class="desc">
-      Deploying global HTTP(S) load balancers, auto-healing managed instance groups, and resilient traffic management.
+      Designing high-performance analytical data warehouses, optimized SQL partitioning, clustering, and BI ingestion.
     </div>
   </foreignObject>
 
   <!-- Skill Tags -->
   <g transform="translate(25, 158)">
-    <rect x="0" y="0" width="130" height="24" rx="6" fill="#1E293B" fill-opacity="0.8" stroke="#6366F1" stroke-opacity="0.3" stroke-width="1"/>
-    <text x="65" y="16" text-anchor="middle" class="tag-text">Compute Engine</text>
+    <rect x="0" y="0" width="130" height="24" rx="6" fill="#1E293B" fill-opacity="0.8" stroke="#0284C7" stroke-opacity="0.3" stroke-width="1"/>
+    <text x="65" y="16" text-anchor="middle" class="tag-text">BigQuery</text>
 
-    <rect x="140" y="0" width="135" height="24" rx="6" fill="#1E293B" fill-opacity="0.8" stroke="#6366F1" stroke-opacity="0.3" stroke-width="1"/>
-    <text x="207" y="16" text-anchor="middle" class="tag-text">Load Balancing</text>
+    <rect x="140" y="0" width="135" height="24" rx="6" fill="#1E293B" fill-opacity="0.8" stroke="#0284C7" stroke-opacity="0.3" stroke-width="1"/>
+    <text x="207" y="16" text-anchor="middle" class="tag-text">SQL Analytics</text>
 
-    <rect x="285" y="0" width="130" height="24" rx="6" fill="#1E293B" fill-opacity="0.8" stroke="#6366F1" stroke-opacity="0.3" stroke-width="1"/>
-    <text x="350" y="16" text-anchor="middle" class="tag-text">High Availability</text>
+    <rect x="285" y="0" width="130" height="24" rx="6" fill="#1E293B" fill-opacity="0.8" stroke="#0284C7" stroke-opacity="0.3" stroke-width="1"/>
+    <text x="350" y="16" text-anchor="middle" class="tag-text">Data Warehouse</text>
 
-    <rect x="425" y="0" width="145" height="24" rx="6" fill="#1E293B" fill-opacity="0.8" stroke="#6366F1" stroke-opacity="0.3" stroke-width="1"/>
-    <text x="497" y="16" text-anchor="middle" class="tag-text">DevOps</text>
+    <rect x="425" y="0" width="145" height="24" rx="6" fill="#1E293B" fill-opacity="0.8" stroke="#0284C7" stroke-opacity="0.3" stroke-width="1"/>
+    <text x="497" y="16" text-anchor="middle" class="tag-text">ETL</text>
   </g>
 
   <!-- Verification Footer -->

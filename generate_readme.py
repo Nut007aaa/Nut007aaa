@@ -27,15 +27,9 @@ def generate_projects_section():
     html += '</tr>\n</table>\n</div>\n'
     return html
 
-def generate_certifications_section():
-    certs = [
-        {"id": "microsoft-ai-skills-fest-2026", "title": "AI Skills Fest 2026 - Microsoft Credly Verified"},
-        {"id": "google-cloud-engineer-ai-agents", "title": "Engineer AI Agents with ADK - Google Cloud"},
-        {"id": "google-cloud-load-balancing", "title": "Cloud Load Balancing for Compute Engine - Google Cloud"},
-        {"id": "google-cloud-feedback-agent", "title": "Personal Feedback Agent: AI Boost Bites - Google Cloud"}
-    ]
-    html = '<div align="center">\n<table border="0">\n<tr>\n'
-    for i, c in enumerate(certs):
+def generate_cert_grid(cert_list):
+    html = '<table border="0" width="100%">\n<tr>\n'
+    for i, c in enumerate(cert_list):
         if i > 0 and i % 2 == 0:
             html += '</tr>\n<tr>\n'
         html += f'''
@@ -43,7 +37,55 @@ def generate_certifications_section():
   <img src="assets/certifications/{c['id']}.svg" alt="{c['title']}" width="100%" />
 </td>
 '''
-    html += '</tr>\n</table>\n</div>\n'
+    # If odd number of items, fill with an empty cell
+    if len(cert_list) % 2 != 0:
+        html += '<td width="50%"></td>\n'
+    html += '</tr>\n</table>\n'
+    return html
+
+def generate_all_certifications_section():
+    ai_certs = [
+        {"id": "microsoft-ai-skills-fest-2026", "title": "AI Skills Fest 2026 - Microsoft Credly Verified"},
+        {"id": "google-cloud-engineer-ai-agents", "title": "Engineer AI Agents with ADK - Google Cloud"},
+        {"id": "google-cloud-gemini-enterprise", "title": "Create First Gemini Enterprise App - Google Cloud"},
+        {"id": "google-cloud-feedback-agent", "title": "Personal Feedback Agent: AI Boost Bites - Google Cloud"},
+        {"id": "google-cloud-prepare-data-ml-apis", "title": "Prepare Data for ML APIs - Google Cloud"}
+    ]
+    infra_certs = [
+        {"id": "google-cloud-manage-kubernetes", "title": "Manage Kubernetes in Google Cloud (GKE) - Google Cloud"},
+        {"id": "google-cloud-terraform-infrastructure", "title": "Build Infrastructure with Terraform - Google Cloud"},
+        {"id": "google-cloud-load-balancing", "title": "Cloud Load Balancing for Compute Engine - Google Cloud"},
+        {"id": "google-cloud-app-dev-environment", "title": "Set Up an App Dev Environment - Google Cloud"}
+    ]
+    security_certs = [
+        {"id": "google-cloud-develop-network", "title": "Develop Your Google Cloud Network - Google Cloud"},
+        {"id": "google-cloud-build-secure-network", "title": "Build a Secure Google Cloud Network - Google Cloud"},
+        {"id": "google-cloud-security-fundamentals", "title": "Implement Cloud Security Fundamentals - Google Cloud"}
+    ]
+    data_certs = [
+        {"id": "google-cloud-bigquery-data-warehouse", "title": "Build a Data Warehouse with BigQuery - Google Cloud"},
+        {"id": "google-cloud-storage-data-protection", "title": "Cloud Storage & Data Protection - Google Cloud"}
+    ]
+
+    html = f"""
+### 🤖 Artificial Intelligence & Multi-Agent Systems
+{generate_cert_grid(ai_certs)}
+
+<br/>
+
+### ☁️ Cloud Infrastructure, Kubernetes & Terraform
+{generate_cert_grid(infra_certs)}
+
+<br/>
+
+### 🔒 Cloud Networking & Enterprise Security
+{generate_cert_grid(security_certs)}
+
+<br/>
+
+### 📊 Data Warehousing & Cloud Storage
+{generate_cert_grid(data_certs)}
+"""
     return html
 
 def generate_credly_skills():
@@ -52,11 +94,16 @@ def generate_credly_skills():
         ("Artificial Intelligence", "credly", "FF6B00"),
         ("AI Ethics", "credly", "FF6B00"),
         ("AI Applications", "credly", "FF6B00"),
-        ("Build Automation", "credly", "FF6B00"),
-        ("Cloud Computing", "credly", "FF6B00"),
-        ("Compute Engine", "credly", "FF6B00"),
+        ("Kubernetes (GKE)", "kubernetes", "326CE5"),
+        ("Terraform (IaC)", "terraform", "844FBA"),
         ("Cloud Load Balancing", "google-cloud", "4285F4"),
-        ("Agent Dev Kit (ADK)", "google-cloud", "4285F4")
+        ("Compute Engine", "google-cloud", "4285F4"),
+        ("Agent Dev Kit (ADK)", "google-cloud", "4285F4"),
+        ("Gemini AI API", "google-cloud", "4285F4"),
+        ("BigQuery Analytics", "google-cloud", "4285F4"),
+        ("Cloud Security & IAM", "google-cloud", "EA4335"),
+        ("Build Automation", "credly", "FF6B00"),
+        ("Cloud Storage", "google-cloud", "34A853")
     ]
     html = '<div align="center">\n'
     for name, logo, color in skills:
@@ -66,39 +113,46 @@ def generate_credly_skills():
 
 def generate_tech_stack():
     stack_data = {
-        "AI & Agents": [
-            ("AI Agents", "openai"),
+        "AI & Autonomous Agents": [
+            ("Gemini AI", "google-cloud"),
             ("Agent Dev Kit (ADK)", "google-cloud"),
+            ("Vertex AI", "google-cloud"),
             ("PyTorch", "pytorch"),
-            ("TensorFlow", "tensorflow"),
             ("FastAPI", "fastapi")
         ],
-        "Cloud & Infrastructure": [
+        "Cloud, K8s & DevOps": [
             ("Google Cloud", "google-cloud"),
+            ("Kubernetes", "kubernetes"),
+            ("Terraform", "terraform"),
             ("Compute Engine", "google-cloud"),
-            ("Load Balancing", "google-cloud"),
-            ("Docker", "docker"),
-            ("GitHub Actions", "githubactions")
+            ("Docker", "docker")
         ],
-        "Frontend": [
+        "Networking & Security": [
+            ("Cloud Armor", "google-cloud"),
+            ("Cloud Load Balancing", "google-cloud"),
+            ("VPC Networking", "google-cloud"),
+            ("Cloud IAM", "google-cloud"),
+            ("Cloud KMS", "google-cloud")
+        ],
+        "Data & Analytics": [
+            ("BigQuery", "google-cloud"),
+            ("Cloud Storage", "google-cloud"),
+            ("PostgreSQL", "postgresql"),
+            ("MongoDB", "mongodb"),
+            ("GraphQL", "graphql")
+        ],
+        "Frontend & UI": [
             ("React", "react"),
             ("Next.js", "next.js"),
             ("TypeScript", "typescript"),
             ("Tailwind", "tailwindcss"),
             ("Framer Motion", "framer")
-        ],
-        "Backend & DB": [
-            ("Node.js", "node.js"),
-            ("Python", "python"),
-            ("PostgreSQL", "postgresql"),
-            ("MongoDB", "mongodb"),
-            ("GraphQL", "graphql")
         ]
     }
     
     html = '<table align="center" border="0">\n'
     for category, techs in stack_data.items():
-        html += f'  <tr>\n    <td align="right" width="22%"><b>{category}</b></td>\n    <td width="78%">\n'
+        html += f'  <tr>\n    <td align="right" width="24%"><b>{category}</b></td>\n    <td width="76%">\n'
         for name, logo in techs:
             html += f'      {get_badge(name, logo)} '
         html += '\n    </td>\n  </tr>\n'
@@ -148,17 +202,17 @@ readme_content = f"""<!--
 
 > **Building real-world products at the intersection of Artificial Intelligence, Cloud Infrastructure, and Premium Design.**
 
-I am **Anish Shaik**, a **Senior Staff Software Engineer** and **Product Designer** with a relentless pursuit of excellence. My work doesn't just function—it performs beautifully. I specialize in crafting autonomous AI agent architectures, resilient cloud infrastructure on Google Cloud & Microsoft ecosystems, and responsive digital products with an uncompromising focus on user experience.
+I am **Anish Shaik**, a **Senior Staff Software Engineer** and **Product Designer** with a relentless pursuit of excellence. My work doesn't just function—it performs beautifully. I specialize in crafting autonomous AI agent architectures, resilient cloud infrastructure on Google Cloud & Microsoft ecosystems, Kubernetes orchestration, and responsive digital products with an uncompromising focus on user experience.
 
 ---
 
 ## 🏆 Verified Certifications & Badges
 
 <div align="center">
-  <p>Recognized by <b>Microsoft</b> and <b>Google Cloud</b> for expertise in Artificial Intelligence, Multi-Agent Systems, and Cloud Infrastructure.</p>
+  <p>Official credentials and skill badges recognized by <b>Google Cloud</b> and <b>Microsoft</b> via <b>Credly</b> & <b>Skills Boost</b>.</p>
 </div>
 
-{generate_certifications_section()}
+{generate_all_certifications_section()}
 
 <div align="center">
   <img src="assets/svg/divider.svg" width="100%" />
@@ -188,7 +242,7 @@ I am **Anish Shaik**, a **Senior Staff Software Engineer** and **Product Designe
 
 ## 🏗️ System Architecture & Design
 
-I architect systems for scale. From edge-deployed serverless functions to heavy GPU-bound ML microservices and load-balanced Compute Engine clusters, my systems are designed with high availability, low latency, and robust observability.
+I architect systems for scale. From edge-deployed serverless functions to heavy GPU-bound ML microservices, managed GKE Kubernetes clusters, and load-balanced Compute Engine fleets, my systems are designed with high availability, low latency, and robust observability.
 
 <div align="center">
   <img src="assets/svg/architecture.svg" width="100%" alt="System Architecture">
@@ -244,11 +298,11 @@ My portfolio includes projects ranging from autonomous AI agents to complex cons
       </td>
       <td align="center" width="25%">
         <b>☁️ Cloud Infrastructure</b><br/>
-        <small>Compute Engine • Load Balancing</small>
+        <small>Kubernetes • Terraform • Load Balancing</small>
       </td>
       <td align="center" width="25%">
         <b>⚡ High-Scale Systems</b><br/>
-        <small>FastAPI • Node.js • Distributed Systems</small>
+        <small>FastAPI • Node.js • BigQuery</small>
       </td>
       <td align="center" width="25%">
         <b>🎨 Premium Design</b><br/>
@@ -267,10 +321,27 @@ My portfolio includes projects ranging from autonomous AI agents to complex cons
 
 ## 🎓 Education & Credentials
 
-* **Microsoft Certified: AI Skills Fest 2026** (Credly Verified)
+### 🤖 AI & Machine Learning
+* **Microsoft Certified**: AI Skills Fest 2026 (Credly Verified)
 * **Google Cloud Skill Badge**: Engineer AI Agents with Agent Development Kit (ADK)
-* **Google Cloud Skill Badge**: Implementing Cloud Load Balancing for Compute Engine
+* **Google Cloud Skill Badge**: Create Your First Gemini Enterprise Application
 * **Google Cloud Completion Badge**: AI Boost Bites - Personal Feedback Agent
+* **Google Cloud Skill Badge**: Prepare Data for ML APIs on Google Cloud
+
+### ☁️ Cloud Infrastructure, Kubernetes & IaC
+* **Google Cloud Skill Badge**: Manage Kubernetes in Google Cloud (GKE)
+* **Google Cloud Skill Badge**: Build Infrastructure with Terraform on Google Cloud
+* **Google Cloud Skill Badge**: Implementing Cloud Load Balancing for Compute Engine
+* **Google Cloud Skill Badge**: Set Up an App Dev Environment on Google Cloud
+
+### 🔒 Networking, Security & Data
+* **Google Cloud Skill Badge**: Develop Your Google Cloud Network
+* **Google Cloud Skill Badge**: Build a Secure Google Cloud Network
+* **Google Cloud Skill Badge**: Implement Cloud Security Fundamentals on Google Cloud
+* **Google Cloud Skill Badge**: Build a Data Warehouse with BigQuery
+* **Google Cloud Skill Badge**: Implement Cloud Storage and Data Protection Solutions
+
+### 🏛️ Academic Background
 * **M.S. Computer Science** (Specialization in Artificial Intelligence)
 
 <div align="center">
@@ -302,11 +373,11 @@ My portfolio includes projects ranging from autonomous AI agents to complex cons
 </div>
 """
 
-# Let's pad it to ensure clean vertical rhythm
+# Padding for clean vertical rhythm
 for i in range(25):
     readme_content += "\n<!-- Spacing block for premium vertical rhythm -->\n<br/>"
 
 with open(readme_path, 'w', encoding='utf-8') as f:
     f.write(readme_content.strip())
 
-print("README.md generated successfully!")
+print("README.md generated successfully with all 14 certifications!")

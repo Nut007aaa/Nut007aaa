@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 240" width="600" height="240">
+  <defs>
+    <linearGradient id="bg-grad-google-cloud-gemini-enterprise" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4285F4" stop-opacity="0.14" />
+      <stop offset="100%" stop-color="#8B5CF6" stop-opacity="0.04" />
+    </linearGradient>
+    <linearGradient id="border-grad-google-cloud-gemini-enterprise" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4285F4" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#8B5CF6" stop-opacity="0.15" />
+    </linearGradient>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&amp;display=swap');
+      .title { font-family: 'Inter', sans-serif; font-weight: 800; font-size: 20px; fill: #F8FAFC; }
+      .issuer { font-family: 'Inter', sans-serif; font-weight: 700; font-size: 11px; fill: #4285F4; letter-spacing: 1.2px; text-transform: uppercase; }
+      .category { font-family: 'Inter', sans-serif; font-weight: 600; font-size: 11px; fill: #94A3B8; }
+      .desc { font-family: 'Inter', sans-serif; font-weight: 400; font-size: 13px; fill: #94A3B8; line-height: 1.4; }
+      .tag-text { font-family: 'Inter', sans-serif; font-weight: 600; font-size: 11px; fill: #E2E8F0; }
+      .badge-type { font-family: 'Inter', sans-serif; font-weight: 700; font-size: 11px; fill: #8B5CF6; }
+    </style>
+  </defs>
+
+  <!-- Card Background -->
+  <rect width="600" height="240" rx="16" fill="#0B1120" />
+  <rect width="600" height="240" rx="16" fill="url(#bg-grad-google-cloud-gemini-enterprise)" stroke="url(#border-grad-google-cloud-gemini-enterprise)" stroke-width="1.5" />
+
+  <!-- Top Issuer Header -->
+  <g transform="translate(25, 20)">
+    <circle cx="6" cy="6" r="5" fill="#4285F4" />
+    <text x="18" y="10" class="issuer">Google Cloud • Skills Boost</text>
+    <text x="550" y="10" text-anchor="end" class="badge-type">Skill Badge • Foundational</text>
+  </g>
+
+  <!-- Icon Emblem -->
+  <g transform="translate(25, 42)">
+    <rect width="44" height="44" rx="12" fill="#4285F4" fill-opacity="0.15" stroke="#4285F4" stroke-opacity="0.4" stroke-width="1" />
+    <circle cx="22" cy="22" r="11" fill="#8B5CF6" fill-opacity="0.8" />
+    <circle cx="22" cy="22" r="5" fill="#FFF" />
+  </g>
+
+  <!-- Title & Category -->
+  <text x="82" y="62" class="title">Create First Gemini Enterprise App</text>
+  <text x="82" y="80" class="category">📂 Artificial Intelligence</text>
+
+  <!-- Description -->
+  <foreignObject x="25" y="98" width="550" height="52">
+    <div xmlns="http://www.w3.org/1999/xhtml" class="desc">
+      Developing enterprise-grade multimodal AI applications utilizing the Gemini API, Vertex AI, and vector retrieval.
+    </div>
+  </foreignObject>
+
+  <!-- Skill Tags -->
+  <g transform="translate(25, 158)">
+    <rect x="0" y="0" width="130" height="24" rx="6" fill="#1E293B" fill-opacity="0.8" stroke="#4285F4" stroke-opacity="0.3" stroke-width="1"/>
+    <text x="65" y="16" text-anchor="middle" class="tag-text">Gemini AI</text>
+
+    <rect x="140" y="0" width="135" height="24" rx="6" fill="#1E293B" fill-opacity="0.8" stroke="#4285F4" stroke-opacity="0.3" stroke-width="1"/>
+    <text x="207" y="16" text-anchor="middle" class="tag-text">Enterprise AI</text>
+
+    <rect x="285" y="0" width="130" height="24" rx="6" fill="#1E293B" fill-opacity="0.8" stroke="#4285F4" stroke-opacity="0.3" stroke-width="1"/>
+    <text x="350" y="16" text-anchor="middle" class="tag-text">Vertex AI</text>
+
+    <rect x="425" y="0" width="145" height="24" rx="6" fill="#1E293B" fill-opacity="0.8" stroke="#4285F4" stroke-opacity="0.3" stroke-width="1"/>
+    <text x="497" y="16" text-anchor="middle" class="tag-text">Multimodal</text>
+  </g>
+
+  <!-- Verification Footer -->
+  <g transform="translate(25, 198)">
+    <rect x="0" y="0" width="150" height="24" rx="12" fill="#F8FAFC" />
+    <text x="75" y="16" text-anchor="middle" font-family="Inter" font-weight="700" font-size="10" fill="#050816">VERIFIED BADGE ✓</text>
+    
+    <text x="550" y="16" text-anchor="end" font-family="Inter" font-weight="600" font-size="12" fill="#38BDF8">Google Cloud &amp; Microsoft Skills Boost</text>
+  </g>
+</svg>
