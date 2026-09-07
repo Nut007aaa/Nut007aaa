@@ -3,215 +3,98 @@ import os
 cert_dir = r"d:\github\github-profile-kit\assets\certifications"
 os.makedirs(cert_dir, exist_ok=True)
 
+# Clean out old unearned recommendation SVGs if any
+for fname in os.listdir(cert_dir):
+    if fname.endswith(".svg"):
+        os.remove(os.path.join(cert_dir, fname))
+
 certs = [
-    # --- AI & Multi-Agent Systems ---
+    # 1. Microsoft AI Skills Fest
     {
         "id": "microsoft-ai-skills-fest-2026",
         "title": "AI Skills Fest 2026",
         "issuer": "Microsoft • Credly Verified",
-        "badge_type": "Official Microsoft Credential",
+        "badge_type": "Official Credential • Jun 2026",
         "category": "Artificial Intelligence & Generative AI",
-        "desc": "Mastery of advanced Generative AI architectures, multi-agent reasoning systems, and enterprise AI transformation.",
-        "tags": ["Generative AI", "AI Agents", "Microsoft", "Copilot"],
+        "desc": "Mastery of advanced Generative AI architectures, multi-agent systems, prompt design, and enterprise AI transformation.",
+        "tags": ["Generative AI", "AI Agents", "Microsoft", "Credly Verified"],
         "color1": "#8B5CF6",
         "color2": "#38BDF8",
         "accent": "#00A4EF"
     },
+    # 2. Google Cloud Engineer AI Agents
     {
         "id": "google-cloud-engineer-ai-agents",
         "title": "Engineer AI Agents with ADK",
-        "issuer": "Google Cloud • Skills Boost",
+        "issuer": "Google Cloud • Skills Boost & Credly",
         "badge_type": "Skill Badge • Intermediate",
         "category": "Artificial Intelligence",
-        "desc": "Autonomous agent design, Agent Development Kit (ADK), tool calling, context chaining, and prompt orchestration.",
-        "tags": ["AI Agents", "ADK", "Gemini", "Cloud AI"],
+        "desc": "Autonomous agent design, Agent Development Kit (ADK), multi-step tool calling, context chaining, and prompt orchestration.",
+        "tags": ["AI Agents", "Agent Dev Kit", "Gemini", "Cloud AI"],
         "color1": "#38BDF8",
         "color2": "#10B981",
         "accent": "#4285F4"
     },
-    {
-        "id": "google-cloud-gemini-enterprise",
-        "title": "Create First Gemini Enterprise App",
-        "issuer": "Google Cloud • Skills Boost",
-        "badge_type": "Skill Badge • Foundational",
-        "category": "Artificial Intelligence",
-        "desc": "Developing enterprise-grade multimodal AI applications utilizing the Gemini API, Vertex AI, and vector retrieval.",
-        "tags": ["Gemini AI", "Enterprise AI", "Vertex AI", "Multimodal"],
-        "color1": "#4285F4",
-        "color2": "#8B5CF6",
-        "accent": "#4285F4"
-    },
-    {
-        "id": "google-cloud-feedback-agent",
-        "title": "Personal Feedback Agent (AI Boost Bites)",
-        "issuer": "Google Cloud • Skills Boost",
-        "badge_type": "Completion Badge",
-        "category": "Artificial Intelligence",
-        "desc": "Engineering automated feedback agents with contextual adaptive memory, prompt evaluation, and feedback loops.",
-        "tags": ["Feedback Agents", "AI Automation", "Prompt Eng", "Evaluation"],
-        "color1": "#F59E0B",
-        "color2": "#EC4899",
-        "accent": "#EA4335"
-    },
-    {
-        "id": "google-cloud-prepare-data-ml-apis",
-        "title": "Prepare Data for ML APIs",
-        "issuer": "Google Cloud • Skills Boost",
-        "badge_type": "Skill Badge • Foundational",
-        "category": "Smart Analytics & ML",
-        "desc": "Preprocessing, feature extraction, dataset curation, and seamless pipeline integration for Google Cloud ML APIs.",
-        "tags": ["Machine Learning", "Data Prep", "Vision API", "BigQuery ML"],
-        "color1": "#10B981",
-        "color2": "#38BDF8",
-        "accent": "#34A853"
-    },
-
-    # --- Cloud Infrastructure, Kubernetes & Terraform ---
-    {
-        "id": "google-cloud-manage-kubernetes",
-        "title": "Manage Kubernetes in Google Cloud",
-        "issuer": "Google Cloud • Skills Boost",
-        "badge_type": "Skill Badge • Intermediate",
-        "category": "Hybrid & Multi-Cloud",
-        "desc": "Container orchestration with GKE: multi-node clusters, deployments, auto-scaling, rolling updates, and monitoring.",
-        "tags": ["Kubernetes", "GKE", "Containers", "DevOps"],
-        "color1": "#326CE5",
-        "color2": "#38BDF8",
-        "accent": "#326CE5"
-    },
-    {
-        "id": "google-cloud-terraform-infrastructure",
-        "title": "Build Infrastructure with Terraform",
-        "issuer": "Google Cloud • Skills Boost",
-        "badge_type": "Skill Badge • Intermediate",
-        "category": "Infrastructure Modernization",
-        "desc": "Declarative Infrastructure-as-Code (IaC), state management, reusable modules, and automated cloud provisioning.",
-        "tags": ["Terraform", "IaC", "Automation", "GCP Resources"],
-        "color1": "#844FBA",
-        "color2": "#38BDF8",
-        "accent": "#844FBA"
-    },
+    # 3. Google Cloud Load Balancing
     {
         "id": "google-cloud-load-balancing",
         "title": "Cloud Load Balancing for Compute Engine",
-        "issuer": "Google Cloud • Skills Boost",
-        "badge_type": "Skill Badge • Intermediate",
-        "category": "Infrastructure Modernization",
-        "desc": "Deploying global HTTP(S) load balancers, auto-healing managed instance groups, and resilient traffic management.",
+        "issuer": "Google Cloud • Skills Boost & Credly",
+        "badge_type": "Skill Badge • Infrastructure Modernization",
+        "category": "Cloud Infrastructure",
+        "desc": "Deploying global HTTP(S) load balancers, auto-healing managed instance groups, SSL termination, and resilient traffic routing.",
         "tags": ["Compute Engine", "Load Balancing", "High Availability", "DevOps"],
         "color1": "#6366F1",
         "color2": "#38BDF8",
         "accent": "#4285F4"
     },
+    # 4. Google Cloud Feedback Agent
     {
-        "id": "google-cloud-app-dev-environment",
-        "title": "Set Up an App Dev Environment",
+        "id": "google-cloud-feedback-agent",
+        "title": "Personal Feedback Agent: AI Boost Bites",
         "issuer": "Google Cloud • Skills Boost",
-        "badge_type": "Skill Badge • Foundational",
-        "category": "Infrastructure Modernization",
-        "desc": "Configuring development environments, IAM service accounts, Cloud Shell, Cloud Storage, and Compute VMs.",
-        "tags": ["Cloud SDK", "IAM Accounts", "Cloud Shell", "App Engine"],
-        "color1": "#0EA5E9",
-        "color2": "#10B981",
-        "accent": "#34A853"
-    },
-
-    # --- Cloud Networking & Security ---
-    {
-        "id": "google-cloud-develop-network",
-        "title": "Develop Your Google Cloud Network",
-        "issuer": "Google Cloud • Skills Boost",
-        "badge_type": "Skill Badge • Intermediate",
-        "category": "Infrastructure Modernization",
-        "desc": "Architecting Virtual Private Clouds (VPC), custom subnets, multi-region routing, bastion hosts, and Cloud DNS.",
-        "tags": ["VPC Networks", "Cloud DNS", "Subnets", "Routing"],
-        "color1": "#2563EB",
-        "color2": "#38BDF8",
-        "accent": "#4285F4"
-    },
-    {
-        "id": "google-cloud-build-secure-network",
-        "title": "Build a Secure Google Cloud Network",
-        "issuer": "Google Cloud • Skills Boost",
-        "badge_type": "Skill Badge • Intermediate",
-        "category": "Cloud Security",
-        "desc": "Hardening cloud perimeters with Cloud Armor, strict firewall policies, private Google Access, and VPC Service Controls.",
-        "tags": ["Cloud Armor", "Firewall Rules", "VPC Security", "Perimeter"],
-        "color1": "#DC2626",
-        "color2": "#F59E0B",
+        "badge_type": "Completion Badge • May 2026",
+        "category": "Artificial Intelligence",
+        "desc": "Engineering adaptive feedback agents with contextual memory, automated prompt refinement, and iterative model evaluation.",
+        "tags": ["Feedback Agents", "AI Automation", "Prompt Eng", "Evaluation"],
+        "color1": "#F59E0B",
+        "color2": "#EC4899",
         "accent": "#EA4335"
     },
-    {
-        "id": "google-cloud-security-fundamentals",
-        "title": "Implement Cloud Security Fundamentals",
-        "issuer": "Google Cloud • Skills Boost",
-        "badge_type": "Skill Badge • Intermediate",
-        "category": "Cloud Security",
-        "desc": "Implementing least privilege with Cloud IAM, audit logging, Cloud KMS cryptographic keys, and security benchmarks.",
-        "tags": ["Cloud IAM", "Cloud KMS", "Audit Logs", "Compliance"],
-        "color1": "#EF4444",
-        "color2": "#8B5CF6",
-        "accent": "#EA4335"
-    },
-
-    # --- Data Warehousing & Cloud Storage ---
-    {
-        "id": "google-cloud-bigquery-data-warehouse",
-        "title": "Build a Data Warehouse with BigQuery",
-        "issuer": "Google Cloud • Skills Boost",
-        "badge_type": "Skill Badge • Intermediate",
-        "category": "Smart Analytics",
-        "desc": "Designing high-performance analytical data warehouses, optimized SQL partitioning, clustering, and BI ingestion.",
-        "tags": ["BigQuery", "SQL Analytics", "Data Warehouse", "ETL"],
-        "color1": "#0284C7",
-        "color2": "#38BDF8",
-        "accent": "#4285F4"
-    },
-    {
-        "id": "google-cloud-storage-data-protection",
-        "title": "Cloud Storage & Data Protection",
-        "issuer": "Google Cloud • Skills Boost",
-        "badge_type": "Skill Badge • Foundational",
-        "category": "Data Management",
-        "desc": "Object lifecycle management, Cloud Storage access control, object versioning, and retention protection policies.",
-        "tags": ["Cloud Storage", "Data Protection", "Object Locking", "Disaster Recovery"],
-        "color1": "#14B8A6",
-        "color2": "#38BDF8",
-        "accent": "#34A853"
-    },
-
-    # --- Industry Simulations & Honors ---
+    # 5. AWS Solutions Architecture
     {
         "id": "aws-solutions-architecture-forage",
         "title": "AWS Solutions Architecture Simulation",
         "issuer": "AWS • Forage Certified",
-        "badge_type": "Job Simulation • Issued Jan 2026",
-        "category": "Cloud Architecture & Solutions Design",
-        "desc": "Designing resilient, highly available AWS architectures, cost-optimized compute, multi-tier VPCs, and storage strategies.",
-        "tags": ["AWS Architecture", "Solutions Design", "Cloud Systems", "ID: pBdoefEGGx..."],
+        "badge_type": "Job Simulation • Jan 2026",
+        "category": "Cloud Architecture & AWS",
+        "desc": "Designing scalable, fault-tolerant AWS architectures, multi-tier VPC configurations, serverless components, and cost optimization.",
+        "tags": ["AWS Architecture", "Solutions Design", "VPC & EC2", "ID: pBdoefEGGx..."],
         "color1": "#FF9900",
         "color2": "#38BDF8",
         "accent": "#FF9900"
     },
+    # 6. Forage Data Labeling
     {
         "id": "forage-data-labeling-simulation",
         "title": "Data Labeling Job Simulation",
         "issuer": "Forage Academy Certified",
-        "badge_type": "Job Simulation • Issued Jan 2026",
+        "badge_type": "Job Simulation • Jan 2026",
         "category": "AI Data Engineering & ML Quality",
-        "desc": "Hands-on data annotation pipelines, semantic segmentation, bounding box verification, and training dataset quality assurance.",
+        "desc": "Data annotation pipelines, segmentation workflows, bounding box precision verification, and dataset curation for ML models.",
         "tags": ["Data Labeling", "ML Datasets", "Annotation", "ID: px874ydEdX..."],
         "color1": "#0084FF",
         "color2": "#8B5CF6",
         "accent": "#0084FF"
     },
+    # 7. TATA Crucible Quiz
     {
         "id": "tata-crucible-campus-quiz-2025",
         "title": "TATA Crucible Campus Quiz 2025",
         "issuer": "TATA & Unstop Verified",
         "badge_type": "Certificate of Participation • Nov 2025",
-        "category": "Competitive Tech & Business Quizzing",
-        "desc": "Participated in India's premier campus business and technology quizzing championship organized by TATA and Unstop.",
+        "category": "Competitive Honors",
+        "desc": "Participated in India's prestigious national business and technology quizzing championship organized by TATA and Unstop.",
         "tags": ["TATA Crucible", "Unstop", "Tech Strategy", "ID: d3fc9eec-4f..."],
         "color1": "#006699",
         "color2": "#38BDF8",
@@ -312,4 +195,4 @@ for c in certs:
     with open(os.path.join(cert_dir, f'{c["id"]}.svg'), 'w', encoding='utf-8') as f:
         f.write(svg_data)
 
-print(f"Generated {len(certs)} certification SVGs in {cert_dir}")
+print(f"Generated {len(certs)} authentic certification SVGs in {cert_dir}")

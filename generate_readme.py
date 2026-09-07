@@ -46,54 +46,23 @@ def generate_all_certifications_section():
     ai_certs = [
         {"id": "microsoft-ai-skills-fest-2026", "title": "AI Skills Fest 2026 - Microsoft Credly Verified"},
         {"id": "google-cloud-engineer-ai-agents", "title": "Engineer AI Agents with ADK - Google Cloud"},
-        {"id": "google-cloud-gemini-enterprise", "title": "Create First Gemini Enterprise App - Google Cloud"},
-        {"id": "google-cloud-feedback-agent", "title": "Personal Feedback Agent: AI Boost Bites - Google Cloud"},
-        {"id": "google-cloud-prepare-data-ml-apis", "title": "Prepare Data for ML APIs - Google Cloud"}
+        {"id": "google-cloud-feedback-agent", "title": "Personal Feedback Agent: AI Boost Bites - Google Cloud"}
     ]
-    infra_certs = [
-        {"id": "google-cloud-manage-kubernetes", "title": "Manage Kubernetes in Google Cloud (GKE) - Google Cloud"},
-        {"id": "google-cloud-terraform-infrastructure", "title": "Build Infrastructure with Terraform - Google Cloud"},
+    cloud_industry_certs = [
         {"id": "google-cloud-load-balancing", "title": "Cloud Load Balancing for Compute Engine - Google Cloud"},
-        {"id": "google-cloud-app-dev-environment", "title": "Set Up an App Dev Environment - Google Cloud"}
-    ]
-    security_certs = [
-        {"id": "google-cloud-develop-network", "title": "Develop Your Google Cloud Network - Google Cloud"},
-        {"id": "google-cloud-build-secure-network", "title": "Build a Secure Google Cloud Network - Google Cloud"},
-        {"id": "google-cloud-security-fundamentals", "title": "Implement Cloud Security Fundamentals - Google Cloud"}
-    ]
-    data_certs = [
-        {"id": "google-cloud-bigquery-data-warehouse", "title": "Build a Data Warehouse with BigQuery - Google Cloud"},
-        {"id": "google-cloud-storage-data-protection", "title": "Cloud Storage & Data Protection - Google Cloud"}
-    ]
-    simulation_certs = [
-        {"id": "aws-solutions-architecture-forage", "title": "AWS Solutions Architecture Job Simulation - Forage"},
+        {"id": "aws-solutions-architecture-forage", "title": "AWS Solutions Architecture Simulation - Forage"},
         {"id": "forage-data-labeling-simulation", "title": "Data Labeling Job Simulation - Forage Academy"},
         {"id": "tata-crucible-campus-quiz-2025", "title": "TATA Crucible Campus Quiz 2025 - Unstop"}
     ]
 
     html = f"""
-### 🤖 Artificial Intelligence & Multi-Agent Systems
+### 🤖 Artificial Intelligence & Autonomous Multi-Agent Systems
 {generate_cert_grid(ai_certs)}
 
 <br/>
 
-### ☁️ Cloud Infrastructure, Kubernetes & Terraform
-{generate_cert_grid(infra_certs)}
-
-<br/>
-
-### 🔒 Cloud Networking & Enterprise Security
-{generate_cert_grid(security_certs)}
-
-<br/>
-
-### 📊 Data Warehousing & Cloud Storage
-{generate_cert_grid(data_certs)}
-
-<br/>
-
-### 🏛️ Industry Simulations & Competitive Honors
-{generate_cert_grid(simulation_certs)}
+### ☁️ Cloud Architecture, Infrastructure & Industry Honors
+{generate_cert_grid(cloud_industry_certs)}
 """
     return html
 
@@ -103,18 +72,12 @@ def generate_credly_skills():
         ("Artificial Intelligence", "credly", "FF6B00"),
         ("AI Ethics", "credly", "FF6B00"),
         ("AI Applications", "credly", "FF6B00"),
-        ("AWS Solutions Architecture", "amazon-aws", "FF9900"),
-        ("Kubernetes (GKE)", "kubernetes", "326CE5"),
-        ("Terraform (IaC)", "terraform", "844FBA"),
+        ("AWS Architecture", "amazon-aws", "FF9900"),
         ("Cloud Load Balancing", "google-cloud", "4285F4"),
         ("Compute Engine", "google-cloud", "4285F4"),
         ("Agent Dev Kit (ADK)", "google-cloud", "4285F4"),
-        ("Gemini AI API", "google-cloud", "4285F4"),
-        ("BigQuery Analytics", "google-cloud", "4285F4"),
-        ("Data Labeling & ML Prep", "forage", "0084FF"),
-        ("Cloud Security & IAM", "google-cloud", "EA4335"),
-        ("Build Automation", "credly", "FF6B00"),
-        ("Cloud Storage", "google-cloud", "34A853")
+        ("Data Labeling & ML Quality", "forage", "0084FF"),
+        ("Build Automation", "credly", "FF6B00")
     ]
     html = '<div align="center">\n'
     for name, logo, color in skills:
@@ -125,31 +88,22 @@ def generate_credly_skills():
 def generate_tech_stack():
     stack_data = {
         "AI & Autonomous Agents": [
-            ("Gemini AI", "google-cloud"),
+            ("AI Agents", "openai"),
             ("Agent Dev Kit (ADK)", "google-cloud"),
-            ("Vertex AI", "google-cloud"),
             ("Data Labeling", "forage"),
             ("PyTorch", "pytorch"),
             ("FastAPI", "fastapi")
         ],
-        "Cloud, K8s & AWS": [
+        "Cloud & Infrastructure": [
             ("AWS Architecture", "amazon-aws"),
             ("Google Cloud", "google-cloud"),
-            ("Kubernetes", "kubernetes"),
-            ("Terraform", "terraform"),
             ("Compute Engine", "google-cloud"),
+            ("Load Balancing", "google-cloud"),
             ("Docker", "docker")
         ],
-        "Networking & Security": [
-            ("Cloud Armor", "google-cloud"),
-            ("Cloud Load Balancing", "google-cloud"),
-            ("VPC Networking", "google-cloud"),
-            ("Cloud IAM", "google-cloud"),
-            ("Cloud KMS", "google-cloud")
-        ],
-        "Data & Analytics": [
-            ("BigQuery", "google-cloud"),
-            ("Cloud Storage", "google-cloud"),
+        "Backend & DB": [
+            ("Python", "python"),
+            ("Node.js", "node.js"),
             ("PostgreSQL", "postgresql"),
             ("MongoDB", "mongodb"),
             ("GraphQL", "graphql")
@@ -201,7 +155,7 @@ readme_content = f"""<!--
 
 <div align="center">
   <a href="https://nut007aaa.github.io" target="_blank"><img src="https://img.shields.io/badge/Portfolio-050816?style=for-the-badge&logo=vercel&logoColor=white&borderColor=38BDF8" alt="Portfolio" /></a>
-  <a href="https://linkedin.com/in/Nut007aaa" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-050816?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
+  <a href="https://www.linkedin.com/in/anish-shaikh-ba9703222/" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-050816?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
   <a href="https://twitter.com/Nut007aaa" target="_blank"><img src="https://img.shields.io/badge/Twitter-050816?style=for-the-badge&logo=x&logoColor=white" alt="Twitter" /></a>
   <a href="mailto:anish.shaiks007@gmail.com" target="_blank"><img src="https://img.shields.io/badge/Email-050816?style=for-the-badge&logo=minutemailer&logoColor=white" alt="Email" /></a>
   <a href="resume.pdf" target="_blank"><img src="https://img.shields.io/badge/Resume-050816?style=for-the-badge&logo=googledocs&logoColor=white" alt="Resume" /></a>
@@ -215,14 +169,14 @@ readme_content = f"""<!--
 
 > **Building real-world products at the intersection of Artificial Intelligence, Cloud Infrastructure, and Premium Design.**
 
-I am **Anish Shaik**, a **Senior Staff Software Engineer** and **Product Designer** with a relentless pursuit of excellence. My work doesn't just function—it performs beautifully. I specialize in crafting autonomous AI agent architectures, resilient multi-cloud infrastructure on AWS & Google Cloud ecosystems, Kubernetes orchestration, and responsive digital products with an uncompromising focus on user experience.
+I am **Anish Shaikh**, a **Software Engineer** and **Product Architect** with a relentless pursuit of excellence. My work doesn't just function—it performs beautifully. I specialize in crafting autonomous AI agent architectures, scalable cloud infrastructure across AWS & Google Cloud, and responsive digital products with an uncompromising focus on user experience.
 
 ---
 
-## 🏆 Verified Certifications & Badges
+## 🏆 Verified Licenses & Certifications
 
 <div align="center">
-  <p>Official credentials and verified badges recognized across <b>Google Cloud</b>, <b>AWS</b>, <b>Microsoft</b>, and <b>Forage</b>.</p>
+  <p>Official verified credentials recognized across <b>Google Cloud</b>, <b>Microsoft</b>, <b>AWS</b>, and <b>Forage</b>.</p>
 </div>
 
 {generate_all_certifications_section()}
@@ -231,10 +185,10 @@ I am **Anish Shaik**, a **Senior Staff Software Engineer** and **Product Designe
   <img src="assets/svg/divider.svg" width="100%" />
 </div>
 
-## 🎖️ Credly & Industry Verified Skills
+## 🎖️ Credly Verified Skills
 
 <div align="center">
-  <p><i>Official skill competencies verified by Credly, Google Cloud, AWS, and Forage.</i></p>
+  <p><i>Official skill competencies verified by Credly, Google Cloud, and Microsoft.</i></p>
 </div>
 
 {generate_credly_skills()}
@@ -255,7 +209,7 @@ I am **Anish Shaik**, a **Senior Staff Software Engineer** and **Product Designe
 
 ## 🏗️ System Architecture & Design
 
-I architect systems for scale. From edge-deployed serverless functions to heavy GPU-bound ML microservices, multi-tier AWS architectures, managed GKE Kubernetes clusters, and load-balanced Compute Engine fleets, my systems are designed with high availability, low latency, and robust observability.
+I architect systems for scale. From edge-deployed serverless functions to heavy GPU-bound ML microservices, multi-tier AWS architectures, and load-balanced Compute Engine clusters, my systems are designed with high availability, low latency, and robust observability.
 
 <div align="center">
   <img src="assets/svg/architecture.svg" width="100%" alt="System Architecture">
@@ -310,12 +264,12 @@ My portfolio includes projects ranging from autonomous AI agents to complex cons
         <small>Agent Dev Kit • Multi-Agent Loops</small>
       </td>
       <td align="center" width="25%">
-        <b>☁️ Multi-Cloud & IaC</b><br/>
-        <small>AWS • GCP • Kubernetes • Terraform</small>
+        <b>☁️ Multi-Cloud & Architecture</b><br/>
+        <small>AWS • GCP • Load Balancing</small>
       </td>
       <td align="center" width="25%">
-        <b>⚡ High-Scale Systems</b><br/>
-        <small>FastAPI • Node.js • BigQuery</small>
+        <b>⚡ High-Scale Backend</b><br/>
+        <small>FastAPI • Node.js • PostgreSQL</small>
       </td>
       <td align="center" width="25%">
         <b>🎨 Premium Design</b><br/>
@@ -332,35 +286,15 @@ My portfolio includes projects ranging from autonomous AI agents to complex cons
   <img src="assets/svg/divider.svg" width="100%" />
 </div>
 
-## 🎓 Education & Credentials
+## 🎓 Verified Credentials & Honors
 
-### 🤖 AI, Multi-Agent Systems & Machine Learning
-* **Microsoft Certified**: AI Skills Fest 2026 (Credly Verified)
-* **Google Cloud Skill Badge**: Engineer AI Agents with Agent Development Kit (ADK)
-* **Google Cloud Skill Badge**: Create Your First Gemini Enterprise Application
-* **Google Cloud Completion Badge**: AI Boost Bites - Personal Feedback Agent
-* **Google Cloud Skill Badge**: Prepare Data for ML APIs on Google Cloud
-* **Forage Academy**: Data Labeling Job Simulation (Issued Jan 2026 | ID: `px874ydEdXSye3kuL`)
-
-### ☁️ Cloud Infrastructure, Kubernetes & AWS
-* **AWS / Forage**: AWS - Solutions Architecture Job Simulation (Issued Jan 2026 | ID: `pBdoefEGGxrTMHxr4`)
-* **Google Cloud Skill Badge**: Manage Kubernetes in Google Cloud (GKE)
-* **Google Cloud Skill Badge**: Build Infrastructure with Terraform on Google Cloud
-* **Google Cloud Skill Badge**: Implementing Cloud Load Balancing for Compute Engine
-* **Google Cloud Skill Badge**: Set Up an App Dev Environment on Google Cloud
-
-### 🔒 Networking, Security & Data
-* **Google Cloud Skill Badge**: Develop Your Google Cloud Network
-* **Google Cloud Skill Badge**: Build a Secure Google Cloud Network
-* **Google Cloud Skill Badge**: Implement Cloud Security Fundamentals on Google Cloud
-* **Google Cloud Skill Badge**: Build a Data Warehouse with BigQuery
-* **Google Cloud Skill Badge**: Implement Cloud Storage and Data Protection Solutions
-
-### 🏆 Honors & Competitive Achievements
-* **Unstop / TATA**: Certificate of Participation in TATA Crucible Campus Quiz 2025 (Issued Nov 2025 | ID: `d3fc9eec-4fe0-41f6-b64f-111b6cd25a1e`)
-
-### 🏛️ Academic Background
-* **M.S. Computer Science** (Specialization in Artificial Intelligence)
+* 🌟 **Microsoft**: AI Skills Fest 2026 *(Credly Verified | Issued Jun 2026)*
+* 🌟 **Google Cloud**: Engineer AI Agents with Agent Development Kit (ADK) *(Skill Badge Intermediate | Issued May 2026)*
+* 🌟 **Google Cloud**: Implementing Cloud Load Balancing for Compute Engine *(Skill Badge | Issued Jun 2026)*
+* 🌟 **Google Cloud**: AI Boost Bites - Personal Feedback Agent *(Completion Badge | Earned May 2026)*
+* 🌟 **AWS / Forage**: AWS - Solutions Architecture Job Simulation *(Issued Jan 2026 | ID: `pBdoefEGGxrTMHxr4`)*
+* 🌟 **Forage Academy**: Data Labeling Job Simulation *(Issued Jan 2026 | ID: `px874ydEdXSye3kuL`)*
+* 🌟 **Unstop / TATA**: Certificate of Participation in TATA Crucible Campus Quiz 2025 *(Issued Nov 2025 | ID: `d3fc9eec-4fe0-41f6-b64f-111b6cd25a1e`)*
 
 <div align="center">
   <img src="assets/svg/divider.svg" width="100%" />
@@ -387,7 +321,7 @@ My portfolio includes projects ranging from autonomous AI agents to complex cons
 <br>
 
 <div align="center">
-  <p><small>Copyright © 2026 Anish Shaik. Handcrafted with precision.</small></p>
+  <p><small>Copyright © 2026 Anish Shaikh. Handcrafted with precision.</small></p>
 </div>
 """
 
@@ -398,4 +332,4 @@ for i in range(25):
 with open(readme_path, 'w', encoding='utf-8') as f:
     f.write(readme_content.strip())
 
-print("README.md generated successfully with all 17 credentials!")
+print("README.md generated successfully with authentic 7 credentials!")

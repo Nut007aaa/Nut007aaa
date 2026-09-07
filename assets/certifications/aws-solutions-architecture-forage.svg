@@ -27,7 +27,7 @@
   <g transform="translate(25, 20)">
     <circle cx="6" cy="6" r="5" fill="#FF9900" />
     <text x="18" y="10" class="issuer">AWS • Forage Certified</text>
-    <text x="550" y="10" text-anchor="end" class="badge-type">Job Simulation • Issued Jan 2026</text>
+    <text x="550" y="10" text-anchor="end" class="badge-type">Job Simulation • Jan 2026</text>
   </g>
 
   <!-- Icon Emblem -->
@@ -39,12 +39,12 @@
 
   <!-- Title & Category -->
   <text x="82" y="62" class="title">AWS Solutions Architecture Simulation</text>
-  <text x="82" y="80" class="category">📂 Cloud Architecture & Solutions Design</text>
+  <text x="82" y="80" class="category">📂 Cloud Architecture & AWS</text>
 
   <!-- Description -->
   <foreignObject x="25" y="98" width="550" height="52">
     <div xmlns="http://www.w3.org/1999/xhtml" class="desc">
-      Designing resilient, highly available AWS architectures, cost-optimized compute, multi-tier VPCs, and storage strategies.
+      Designing scalable, fault-tolerant AWS architectures, multi-tier VPC configurations, serverless components, and cost optimization.
     </div>
   </foreignObject>
 
@@ -57,7 +57,7 @@
     <text x="212" y="16" text-anchor="middle" class="tag-text">Solutions Design</text>
 
     <rect x="290" y="0" width="130" height="24" rx="6" fill="#1E293B" fill-opacity="0.8" stroke="#FF9900" stroke-opacity="0.3" stroke-width="1"/>
-    <text x="355" y="16" text-anchor="middle" class="tag-text">Cloud Systems</text>
+    <text x="355" y="16" text-anchor="middle" class="tag-text">VPC & EC2</text>
 
     <rect x="430" y="0" width="140" height="24" rx="6" fill="#1E293B" fill-opacity="0.8" stroke="#FF9900" stroke-opacity="0.3" stroke-width="1"/>
     <text x="500" y="16" text-anchor="middle" class="tag-text">ID: pBdoefEGGx...</text>
